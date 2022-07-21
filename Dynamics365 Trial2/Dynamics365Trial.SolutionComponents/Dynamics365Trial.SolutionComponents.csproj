@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{35E3DDD5-9498-4B29-AC24-D1DF319783BC}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Dynamics365Trial</RootNamespace>
+    <AssemblyName>Dynamics365Trial</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Assemblies\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.Charting.dll</HintPath>
+    </Reference>
+    <Reference Include="Select.Pdf, Version=22.1.0.0, Culture=neutral, PublicKeyToken=e0ae9f6e27a97018, processorArchitecture=MSIL">
+      <HintPath>..\packages\Select.Pdf.22.1.0\lib\net40\Select.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.License, Version=1.4.0.40, Culture=neutral, PublicKeyToken=b1144360237c8b3f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.PDF.8.3.9\lib\net40\Spire.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=8.3.9.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.PDF.8.3.9\lib\net40\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Solutions\Customizations\customizations.zip" />
+    <None Include="Solutions\Plugins\plugins.zip" />
+    <None Include="Solutions\SecurityRoles\securityroles.zip" />
+    <None Include="Solutions\Webresources\webresources.zip" />
+    <None Include="Solutions\Workflows\workflows.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Solutions\Customizations\Entities\ad_applicationissue\Entity.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationissue\FormXml\card\{26e331ea-c71d-4e30-96cc-69f61fc1ad48}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationissue\FormXml\main\{29c7ac5e-0d34-4fb3-92dc-6cd91f2e7231}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationissue\FormXml\quick\{ccdf37a7-d6a5-4c2a-8215-e2f7f952a0a5}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationissue\RibbonDiff.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationissue\SavedQueries\{0d35fb88-418e-4df5-a874-62417c4763d5}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationissue\SavedQueries\{164584b0-03a8-eb11-b1ac-000d3ab68b42}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationissue\SavedQueries\{26fbc9c6-01a8-eb11-b1ac-000d3ab68b42}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationissue\SavedQueries\{2979db6f-fda7-eb11-b1ac-000d3ab68b42}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationissue\SavedQueries\{4768c69a-40fd-4712-bc28-5333e0ebae11}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationissue\SavedQueries\{47fba541-50ef-4e44-8147-7eb7bc71225d}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationissue\SavedQueries\{59194bc3-06a8-eb11-b1ac-000d3ab68b42}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationissue\SavedQueries\{5db0499a-faa7-eb11-b1ac-000d3ab68b42}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationissue\SavedQueries\{5e8799e8-b86e-45a0-ba97-b53e7e2edc12}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationissue\SavedQueries\{6a5ef181-faa7-eb11-b1ac-000d3ab68b42}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationissue\SavedQueries\{735e0ce3-6fac-48b4-a40f-7f82bb1e4d4a}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationissue\SavedQueries\{8f2fd3b1-119d-eb11-b1ac-0022489a66f2}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationissue\SavedQueries\{9b3f703a-2e0e-4a2d-b5fa-3bd5f8a3c334}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationissue\SavedQueries\{bd2d2068-04a8-eb11-b1ac-000d3ab68b42}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationissue\SavedQueries\{e29da398-06a8-eb11-b1ac-000d3ab68b42}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationissue\Visualizations\{17AC1886-07A8-EB11-B1AC-000D3AB68B42}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationissue\Visualizations\{F3BEDC67-00A8-EB11-B1AC-000D3AB68B42}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationissue\Visualizations\{FF9E2B79-FDA7-EB11-B1AC-000D3AB68B42}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationrunhistory\Entity.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationrunhistory\FormXml\card\{539e86d1-729c-493f-a3c8-d7fb4cbfdfc4}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationrunhistory\FormXml\main\{1aa64963-0a79-458e-8210-f39db4f8d499}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationrunhistory\FormXml\quick\{72819ddb-34e1-45ca-a976-21d090734820}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationrunhistory\RibbonDiff.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationrunhistory\SavedQueries\{18e4a746-56ea-4340-a20e-a98c9899ada6}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationrunhistory\SavedQueries\{36225ba4-3505-4250-8938-7186fb1745c3}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationrunhistory\SavedQueries\{8f8c718a-64a3-eb11-b1ac-000d3adbc120}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationrunhistory\SavedQueries\{a851ea00-7ad9-49f7-aff7-258c7b24a8aa}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationrunhistory\SavedQueries\{c8aa25d6-1af4-4b34-81f1-c0472262072e}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationrunhistory\SavedQueries\{d9f3059c-b16c-4691-a719-ab9710821c84}.xml" />
+    <Content Include="Solutions\Customizations\Entities\ad_applicationrunhistory\SavedQueries\{f9f73a6d-946a-4da7-81c8-ccc4e9ab319a}.xml" />
+    <Content Include="Solutions\Customizations\Other\Customizations.xml" />
+    <Content Include="Solutions\Customizations\Other\Relationships.xml" />
+    <Content Include="Solutions\Customizations\Other\Relationships\BusinessUnit.xml" />
+    <Content Include="Solutions\Customizations\Other\Relationships\Owner.xml" />
+    <Content Include="Solutions\Customizations\Other\Relationships\SystemUser.xml" />
+    <Content Include="Solutions\Customizations\Other\Relationships\Team.xml" />
+    <Content Include="Solutions\Customizations\Other\Solution.xml" />
+    <Content Include="Solutions\Plugins\Other\Customizations.xml" />
+    <Content Include="Solutions\Plugins\Other\Solution.xml" />
+    <Content Include="Solutions\Plugins\SdkMessageProcessingSteps\{2de48f69-55f1-e711-80f9-02155db4a7b4}.xml" />
+    <Content Include="Solutions\SecurityRoles\Other\Customizations.xml" />
+    <Content Include="Solutions\SecurityRoles\Other\Solution.xml" />
+    <Content Include="Solutions\SecurityRoles\Roles\Playbook Manager.xml" />
+    <Content Include="Solutions\SecurityRoles\Roles\Playbook User.xml" />
+    <Content Include="Solutions\Webresources\Other\Customizations.xml" />
+    <Content Include="Solutions\Webresources\Other\Solution.xml" />
+    <Content Include="Solutions\Webresources\WebResources\ad_test.js" />
+    <Content Include="Solutions\Webresources\WebResources\ad_test.js.data.xml" />
+    <Content Include="Solutions\Webresources\WebResources\ad_test2.js" />
+    <Content Include="Solutions\Webresources\WebResources\ad_test2.js.data.xml" />
+    <Content Include="Solutions\Workflows\Other\Customizations.xml" />
+    <Content Include="Solutions\Workflows\Other\Solution.xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

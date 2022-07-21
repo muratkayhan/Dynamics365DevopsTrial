@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.22053.143" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>plugins</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="plugins" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.1</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>adessoag</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="adessoag" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description description="adessoag" languagecode="1033" />
+      </Descriptions>
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl>https://www.adesso.de</SupportingWebsiteUrl>
+      <CustomizationPrefix>ad</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>61481</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="91" id="{a83e81a8-8cc6-4b6c-b450-3a6896fdb551}" schemaName="SalesPremiumSampleDataPlugins.Merged, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" behavior="0" />
+      <RootComponent type="92" id="{2de48f69-55f1-e711-80f9-02155db4a7b4}" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="91" schemaName="SalesPremiumSampleDataPlugins.Merged, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" displayName="SalesPremiumSampleDataPlugins.Merged" solution="msdyn_SalesPremiumSampleData (9.0.1.1110)" id="{a83e81a8-8cc6-4b6c-b450-3a6896fdb551}" />
+        <Dependent type="91" schemaName="SalesPremiumSampleDataPlugins.Merged, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" displayName="SalesPremiumSampleDataPlugins.Merged" id="{a83e81a8-8cc6-4b6c-b450-3a6896fdb551}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="92" displayName="Update RI tenant information" solution="SICommon (9.0.2.2923)" id="{2de48f69-55f1-e711-80f9-02155db4a7b4}">
+          <package>msdynce_SalesInsightsAnchor (9.0.22052.10019)</package>
+          <package>SalesInsightsAddOn (9.0.22051.10009)</package>
+        </Required>
+        <Dependent type="92" displayName="Update RI tenant information" id="{2de48f69-55f1-e711-80f9-02155db4a7b4}" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

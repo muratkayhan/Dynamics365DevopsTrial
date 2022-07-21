@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/BORUSAN_MSCRM.WebServices.CrmServiceTest.Utility" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BORUSAN_MSCRM.WebServices.CrmServiceTest.Utility" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:2515/CrmServiceTest.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="Company">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BlockageDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="BlockageReason" nillable="true" type="tns:Enumarations.BlockageReasen" />
+      <xs:element minOccurs="0" name="CRMID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompanyCity" nillable="true" type="tns:Company.City" />
+      <xs:element minOccurs="0" name="CompanyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompanyCountry" nillable="true" type="tns:Company.City" />
+      <xs:element minOccurs="0" name="CompanyType" nillable="true" type="tns:Enumarations.CompanyType" />
+      <xs:element minOccurs="0" name="CompanyValDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsBlockage" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsPersonelCompany" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LastOrderDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="MDMCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Note" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ParentCompanyId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SapAccCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SapSupplierCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sector" nillable="true" type="tns:Company.SectorCRM" />
+      <xs:element minOccurs="0" name="StateCode" nillable="true" type="tns:Enumarations.Statecode" />
+      <xs:element minOccurs="0" name="SubSector" nillable="true" type="tns:Company.SectorCRM" />
+      <xs:element minOccurs="0" name="Success" type="tns:Enumarations.Success" />
+      <xs:element minOccurs="0" name="SuplierValDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TaxOffice" nillable="true" type="tns:Company.TaxOfficeCRM" />
+      <xs:element minOccurs="0" name="TaxOfficeCity" nillable="true" type="tns:Company.City" />
+      <xs:element minOccurs="0" name="TcVkn" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Company" nillable="true" type="tns:Company" />
+  <xs:simpleType name="Enumarations.BlockageReasen">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Sebep1">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100000000</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Sebep2">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100000001</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Enumarations.BlockageReasen" nillable="true" type="tns:Enumarations.BlockageReasen" />
+  <xs:complexType name="Company.City">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Company.City" nillable="true" type="tns:Company.City" />
+  <xs:simpleType name="Enumarations.CompanyType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Firma">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100000000</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Müşteri">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100000001</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Tedarikçi">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100000002</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Acente">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100000003</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Enumarations.CompanyType" nillable="true" type="tns:Enumarations.CompanyType" />
+  <xs:complexType name="Company.SectorCRM">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Company.SectorCRM" nillable="true" type="tns:Company.SectorCRM" />
+  <xs:simpleType name="Enumarations.Statecode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Etkin" />
+      <xs:enumeration value="EtkinDeğil" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Enumarations.Statecode" nillable="true" type="tns:Enumarations.Statecode" />
+  <xs:simpleType name="Enumarations.Success">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Hatalı" />
+      <xs:enumeration value="Başarılı" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Enumarations.Success" nillable="true" type="tns:Enumarations.Success" />
+  <xs:complexType name="Company.TaxOfficeCRM">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Company.TaxOfficeCRM" nillable="true" type="tns:Company.TaxOfficeCRM" />
+  <xs:complexType name="MsCrmCompanyResultObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CrmId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Log" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReturnObject" nillable="true" type="tns:Company" />
+      <xs:element minOccurs="0" name="Success" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MsCrmCompanyResultObject" nillable="true" type="tns:MsCrmCompanyResultObject" />
+  <xs:complexType name="Marketing">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Branch" nillable="true" type="tns:Enumarations.Branch" />
+      <xs:element minOccurs="0" name="BusinessField" nillable="true" type="tns:Enumarations.MarketingCodes" />
+      <xs:element minOccurs="0" name="CRMID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompanyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MarketingCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MarketingGroup" nillable="true" type="tns:Enumarations.MarketingGroup" />
+      <xs:element minOccurs="0" name="MarketingGroupCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MarketingName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StateCode" type="tns:Enumarations.Statecode" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Marketing" nillable="true" type="tns:Marketing" />
+  <xs:simpleType name="Enumarations.Branch">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="İstanbul">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">34</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Bursa">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">16</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="İzmir">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">35</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Mersin">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">33</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Enumarations.Branch" nillable="true" type="tns:Enumarations.Branch" />
+  <xs:simpleType name="Enumarations.MarketingCodes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Karayolu">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100000000</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Havayolu">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100000001</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Denizyolu">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100000002</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Demiryolu">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100000003</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Depo">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100000004</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Enumarations.MarketingCodes" nillable="true" type="tns:Enumarations.MarketingCodes" />
+  <xs:simpleType name="Enumarations.MarketingGroup">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PazarlamaGrubu1">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100000001</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PazarlamaGrubu2">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100000000</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Enumarations.MarketingGroup" nillable="true" type="tns:Enumarations.MarketingGroup" />
+  <xs:complexType name="MsCrmMarketingResultObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CrmId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Log" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReturnObjectMarketing" nillable="true" type="tns:ArrayOfMarketing" />
+      <xs:element minOccurs="0" name="Success" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MsCrmMarketingResultObject" nillable="true" type="tns:MsCrmMarketingResultObject" />
+  <xs:complexType name="ArrayOfMarketing">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Marketing" nillable="true" type="tns:Marketing" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMarketing" nillable="true" type="tns:ArrayOfMarketing" />
+  <xs:complexType name="AdministrativeInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AdministrativeInfoCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Branch" nillable="true" type="tns:Enumarations.Branch" />
+      <xs:element minOccurs="0" name="BusinessField" nillable="true" type="tns:Enumarations.BusinessField" />
+      <xs:element minOccurs="0" name="CRMID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompanyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Department" nillable="true" type="tns:Enumarations.Department" />
+      <xs:element minOccurs="0" name="MarketingGroupCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MarketingInfoCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RepresentativeType" type="tns:Enumarations.RepresentativeTypeCRM" />
+      <xs:element minOccurs="0" name="SaleSegment" nillable="true" type="tns:Enumarations.SaleSegment" />
+      <xs:element minOccurs="0" name="StateCode" type="tns:Enumarations.Statecode" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AdministrativeInfo" nillable="true" type="tns:AdministrativeInfo" />
+  <xs:simpleType name="Enumarations.BusinessField">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Karayolu">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100000000</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Havayolu">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100000001</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Denizyolu">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100000002</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Demiryolu">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100000003</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Depo">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100000004</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Enumarations.BusinessField" nillable="true" type="tns:Enumarations.BusinessField" />
+  <xs:simpleType name="Enumarations.Department">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Ithalat">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100000000</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Ihracat">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100000001</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Yurtici">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100000002</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="UlkeTasimalari">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100000003</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Enumarations.Department" nillable="true" type="tns:Enumarations.Department" />
+  <xs:simpleType name="Enumarations.RepresentativeTypeCRM">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Müşteri">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Satış">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Operasyon">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Enumarations.RepresentativeTypeCRM" nillable="true" type="tns:Enumarations.RepresentativeTypeCRM" />
+  <xs:simpleType name="Enumarations.SaleSegment">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="SahaSatis">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100000001</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Operasyon">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100000000</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Enumarations.SaleSegment" nillable="true" type="tns:Enumarations.SaleSegment" />
+  <xs:complexType name="MsCrmAdministrativeInfoResultObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CrmId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Log" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReturnObjectAdministrativeInfo" nillable="true" type="tns:ArrayOfAdministrativeInfo" />
+      <xs:element minOccurs="0" name="Success" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MsCrmAdministrativeInfoResultObject" nillable="true" type="tns:MsCrmAdministrativeInfoResultObject" />
+  <xs:complexType name="ArrayOfAdministrativeInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AdministrativeInfo" nillable="true" type="tns:AdministrativeInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAdministrativeInfo" nillable="true" type="tns:ArrayOfAdministrativeInfo" />
+  <xs:complexType name="CompanyAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AddressCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AddressDetail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AddressType" nillable="true" type="tns:Enumarations.AddressType" />
+      <xs:element minOccurs="0" name="CRMID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="tns:CompanyAddress.CityCRM" />
+      <xs:element minOccurs="0" name="CompanyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompanyaddressName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Country" nillable="true" type="tns:CompanyAddress.CountryCRM" />
+      <xs:element minOccurs="0" name="County" nillable="true" type="tns:CompanyAddress.CountyCRM" />
+      <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StateCode" nillable="true" type="tns:Enumarations.Statecode" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CompanyAddress" nillable="true" type="tns:CompanyAddress" />
+  <xs:simpleType name="Enumarations.AddressType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="MüşteriAdresi">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100000000</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MawbAdresi">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100000001</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DepoAdresi">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100000002</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FaturaAdresi">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100000003</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Enumarations.AddressType" nillable="true" type="tns:Enumarations.AddressType" />
+  <xs:complexType name="CompanyAddress.CityCRM">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CompanyAddress.CityCRM" nillable="true" type="tns:CompanyAddress.CityCRM" />
+  <xs:complexType name="CompanyAddress.CountryCRM">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CompanyAddress.CountryCRM" nillable="true" type="tns:CompanyAddress.CountryCRM" />
+  <xs:complexType name="CompanyAddress.CountyCRM">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CompanyAddress.CountyCRM" nillable="true" type="tns:CompanyAddress.CountyCRM" />
+  <xs:complexType name="MsCrmCompanyAddressResultObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CrmId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Log" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReturnObjectCompanyAddress" nillable="true" type="tns:ArrayOfCompanyAddress" />
+      <xs:element minOccurs="0" name="Success" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MsCrmCompanyAddressResultObject" nillable="true" type="tns:MsCrmCompanyAddressResultObject" />
+  <xs:complexType name="ArrayOfCompanyAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CompanyAddress" nillable="true" type="tns:CompanyAddress" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCompanyAddress" nillable="true" type="tns:ArrayOfCompanyAddress" />
+  <xs:complexType name="Contact">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AddressCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BusinessField" nillable="true" type="tns:Enumarations.BusinessField" />
+      <xs:element minOccurs="0" name="CRMID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompanyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContactCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Department" nillable="true" type="tns:Enumarations.Department" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PhoneMobile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PhoneOffice" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StateCode" type="tns:Enumarations.Statecode" />
+      <xs:element minOccurs="0" name="SurName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Contact" nillable="true" type="tns:Contact" />
+  <xs:complexType name="MsCrmContactResultObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CrmId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Log" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReturnObjectCompanyContact" nillable="true" type="tns:ArrayOfContact" />
+      <xs:element minOccurs="0" name="Success" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MsCrmContactResultObject" nillable="true" type="tns:MsCrmContactResultObject" />
+  <xs:complexType name="ArrayOfContact">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Contact" nillable="true" type="tns:Contact" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfContact" nillable="true" type="tns:ArrayOfContact" />
+</xs:schema>

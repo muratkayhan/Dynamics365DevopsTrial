@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="47942376-2866-42f9-af77-40f656db5ae8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:2515/CrmServiceTest.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CrmServiceTest.xsd" MetadataType="Schema" ID="beedde3b-7a51-4262-9b58-4833f6760c84" SourceId="1" SourceUrl="http://localhost:2515/CrmServiceTest.svc?xsd=xsd0" />
+    <MetadataFile FileName="CrmServiceTest.disco" MetadataType="Disco" ID="bcb5b49f-9f97-47b0-9edb-7bca483cfa0a" SourceId="1" SourceUrl="http://localhost:2515/CrmServiceTest.svc?disco" />
+    <MetadataFile FileName="CrmServiceTest.wsdl" MetadataType="Wsdl" ID="7d531cfb-cd2d-4af3-b343-b877f01390fb" SourceId="1" SourceUrl="http://localhost:2515/CrmServiceTest.svc?wsdl" />
+    <MetadataFile FileName="CrmServiceTest1.xsd" MetadataType="Schema" ID="e06d524b-6fc7-42fe-af04-3028b60e8843" SourceId="1" SourceUrl="http://localhost:2515/CrmServiceTest.svc?xsd=xsd1" />
+    <MetadataFile FileName="CrmServiceTest2.xsd" MetadataType="Schema" ID="b2f2649d-e79a-4d8f-b773-b841da635f31" SourceId="1" SourceUrl="http://localhost:2515/CrmServiceTest.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

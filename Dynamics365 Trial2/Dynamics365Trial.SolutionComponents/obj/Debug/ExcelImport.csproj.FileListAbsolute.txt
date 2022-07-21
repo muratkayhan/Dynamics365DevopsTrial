@@ -1,0 +1,16 @@
+C:\Users\GULSAH\source\repos\BORUSAN\BORUSAN_MSCRM\ExcelImport\obj\Debug\ExcelImport.csproj.CoreCompileInputs.cache
+C:\Users\GULSAH\source\repos\BORUSAN\BORUSAN_MSCRM\ExcelImport\bin\Debug\ExcelImport.exe.config
+C:\Users\GULSAH\source\repos\BORUSAN\BORUSAN_MSCRM\ExcelImport\bin\Debug\ExcelImport.exe
+C:\Users\GULSAH\source\repos\BORUSAN\BORUSAN_MSCRM\ExcelImport\bin\Debug\ExcelImport.pdb
+C:\Users\GULSAH\source\repos\BORUSAN\BORUSAN_MSCRM\ExcelImport\bin\Debug\BORUSAN_MSCRM.Library.Utility.dll
+C:\Users\GULSAH\source\repos\BORUSAN\BORUSAN_MSCRM\ExcelImport\bin\Debug\BORUSAN_MSCRM.WebServices.CrmServiceTest.dll
+C:\Users\GULSAH\source\repos\BORUSAN\BORUSAN_MSCRM\ExcelImport\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+C:\Users\GULSAH\source\repos\BORUSAN\BORUSAN_MSCRM\ExcelImport\bin\Debug\Microsoft.Xrm.Sdk.dll
+C:\Users\GULSAH\source\repos\BORUSAN\BORUSAN_MSCRM\ExcelImport\bin\Debug\Newtonsoft.Json.dll
+C:\Users\GULSAH\source\repos\BORUSAN\BORUSAN_MSCRM\ExcelImport\bin\Debug\BORUSAN_MSCRM.WebServices.CrmServiceTest.pdb
+C:\Users\GULSAH\source\repos\BORUSAN\BORUSAN_MSCRM\ExcelImport\bin\Debug\BORUSAN_MSCRM.WebServices.CrmServiceTest.dll.config
+C:\Users\GULSAH\source\repos\BORUSAN\BORUSAN_MSCRM\ExcelImport\bin\Debug\BORUSAN_MSCRM.Library.Utility.pdb
+C:\Users\GULSAH\source\repos\BORUSAN\BORUSAN_MSCRM\ExcelImport\obj\Debug\ExcelImport.csproj.AssemblyReference.cache
+C:\Users\GULSAH\source\repos\BORUSAN\BORUSAN_MSCRM\ExcelImport\obj\Debug\ExcelImport.csproj.CopyComplete
+C:\Users\GULSAH\source\repos\BORUSAN\BORUSAN_MSCRM\ExcelImport\obj\Debug\ExcelImport.exe
+C:\Users\GULSAH\source\repos\BORUSAN\BORUSAN_MSCRM\ExcelImport\obj\Debug\ExcelImport.pdb

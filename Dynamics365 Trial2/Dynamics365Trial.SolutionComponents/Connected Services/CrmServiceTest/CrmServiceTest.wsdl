@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CrmServiceTest" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:2515/CrmServiceTest.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:2515/CrmServiceTest.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:2515/CrmServiceTest.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BORUSAN_MSCRM.WebServices.CrmServiceTest.Utility" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICrmServiceTest_CreateOrUpdateCompany_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrUpdateCompany" />
+  </wsdl:message>
+  <wsdl:message name="ICrmServiceTest_CreateOrUpdateCompany_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrUpdateCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICrmServiceTest_CreateOrUpdateMarketingInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrUpdateMarketingInformation" />
+  </wsdl:message>
+  <wsdl:message name="ICrmServiceTest_CreateOrUpdateMarketingInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrUpdateMarketingInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICrmServiceTest_CreateOrUpdateAdministrativeInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrUpdateAdministrativeInfo" />
+  </wsdl:message>
+  <wsdl:message name="ICrmServiceTest_CreateOrUpdateAdministrativeInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrUpdateAdministrativeInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICrmServiceTest_CreateOrUpdateCompanyAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrUpdateCompanyAddress" />
+  </wsdl:message>
+  <wsdl:message name="ICrmServiceTest_CreateOrUpdateCompanyAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrUpdateCompanyAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICrmServiceTest_CreateOrUpdateCompanyContact_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrUpdateCompanyContact" />
+  </wsdl:message>
+  <wsdl:message name="ICrmServiceTest_CreateOrUpdateCompanyContact_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrUpdateCompanyContactResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICrmServiceTest">
+    <wsdl:operation name="CreateOrUpdateCompany">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICrmServiceTest/CreateOrUpdateCompany" message="tns:ICrmServiceTest_CreateOrUpdateCompany_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICrmServiceTest/CreateOrUpdateCompanyResponse" message="tns:ICrmServiceTest_CreateOrUpdateCompany_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrUpdateMarketingInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICrmServiceTest/CreateOrUpdateMarketingInformation" message="tns:ICrmServiceTest_CreateOrUpdateMarketingInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICrmServiceTest/CreateOrUpdateMarketingInformationResponse" message="tns:ICrmServiceTest_CreateOrUpdateMarketingInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrUpdateAdministrativeInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICrmServiceTest/CreateOrUpdateAdministrativeInfo" message="tns:ICrmServiceTest_CreateOrUpdateAdministrativeInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICrmServiceTest/CreateOrUpdateAdministrativeInfoResponse" message="tns:ICrmServiceTest_CreateOrUpdateAdministrativeInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrUpdateCompanyAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICrmServiceTest/CreateOrUpdateCompanyAddress" message="tns:ICrmServiceTest_CreateOrUpdateCompanyAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICrmServiceTest/CreateOrUpdateCompanyAddressResponse" message="tns:ICrmServiceTest_CreateOrUpdateCompanyAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrUpdateCompanyContact">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICrmServiceTest/CreateOrUpdateCompanyContact" message="tns:ICrmServiceTest_CreateOrUpdateCompanyContact_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICrmServiceTest/CreateOrUpdateCompanyContactResponse" message="tns:ICrmServiceTest_CreateOrUpdateCompanyContact_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ICrmServiceTest" type="tns:ICrmServiceTest">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateOrUpdateCompany">
+      <soap:operation soapAction="http://tempuri.org/ICrmServiceTest/CreateOrUpdateCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrUpdateMarketingInformation">
+      <soap:operation soapAction="http://tempuri.org/ICrmServiceTest/CreateOrUpdateMarketingInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrUpdateAdministrativeInfo">
+      <soap:operation soapAction="http://tempuri.org/ICrmServiceTest/CreateOrUpdateAdministrativeInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrUpdateCompanyAddress">
+      <soap:operation soapAction="http://tempuri.org/ICrmServiceTest/CreateOrUpdateCompanyAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrUpdateCompanyContact">
+      <soap:operation soapAction="http://tempuri.org/ICrmServiceTest/CreateOrUpdateCompanyContact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CrmServiceTest">
+    <wsdl:port name="BasicHttpBinding_ICrmServiceTest" binding="tns:BasicHttpBinding_ICrmServiceTest">
+      <soap:address location="http://localhost:2515/CrmServiceTest.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

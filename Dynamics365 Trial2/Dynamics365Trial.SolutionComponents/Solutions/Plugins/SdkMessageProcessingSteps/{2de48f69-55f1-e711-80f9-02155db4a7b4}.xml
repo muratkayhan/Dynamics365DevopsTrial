@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SdkMessageProcessingStep Name="Update RI tenant information" SdkMessageProcessingStepId="{2de48f69-55f1-e711-80f9-02155db4a7b4}" unmodified="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SdkMessageId>0c633762-6ff0-e711-80f9-02155db4a7b4</SdkMessageId>
+  <PluginTypeName>Microsoft.Dynamics.RICommon.UpdateRITenantInfo, Microsoft.Dynamics.RICommon.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</PluginTypeName>
+  <PluginTypeId>d6f865c4-0443-4aed-b9b0-2be2c99b4d22</PluginTypeId>
+</SdkMessageProcessingStep>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:2515/CrmServiceTest.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BORUSAN_MSCRM.WebServices.CrmServiceTest.Utility" />
+  <xs:element name="CreateOrUpdateCompany">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/BORUSAN_MSCRM.WebServices.CrmServiceTest.Utility" minOccurs="0" name="company" nillable="true" type="q1:Company" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateOrUpdateCompanyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/BORUSAN_MSCRM.WebServices.CrmServiceTest.Utility" minOccurs="0" name="CreateOrUpdateCompanyResult" nillable="true" type="q2:MsCrmCompanyResultObject" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateOrUpdateMarketingInformation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/BORUSAN_MSCRM.WebServices.CrmServiceTest.Utility" minOccurs="0" name="marketinginformation" nillable="true" type="q3:Marketing" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateOrUpdateMarketingInformationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/BORUSAN_MSCRM.WebServices.CrmServiceTest.Utility" minOccurs="0" name="CreateOrUpdateMarketingInformationResult" nillable="true" type="q4:MsCrmMarketingResultObject" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateOrUpdateAdministrativeInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/BORUSAN_MSCRM.WebServices.CrmServiceTest.Utility" minOccurs="0" name="administrativeInfo" nillable="true" type="q5:AdministrativeInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateOrUpdateAdministrativeInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/BORUSAN_MSCRM.WebServices.CrmServiceTest.Utility" minOccurs="0" name="CreateOrUpdateAdministrativeInfoResult" nillable="true" type="q6:MsCrmAdministrativeInfoResultObject" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateOrUpdateCompanyAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/BORUSAN_MSCRM.WebServices.CrmServiceTest.Utility" minOccurs="0" name="address" nillable="true" type="q7:CompanyAddress" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateOrUpdateCompanyAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/BORUSAN_MSCRM.WebServices.CrmServiceTest.Utility" minOccurs="0" name="CreateOrUpdateCompanyAddressResult" nillable="true" type="q8:MsCrmCompanyAddressResultObject" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateOrUpdateCompanyContact">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/BORUSAN_MSCRM.WebServices.CrmServiceTest.Utility" minOccurs="0" name="contact" nillable="true" type="q9:Contact" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateOrUpdateCompanyContactResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/BORUSAN_MSCRM.WebServices.CrmServiceTest.Utility" minOccurs="0" name="CreateOrUpdateCompanyContactResult" nillable="true" type="q10:MsCrmContactResultObject" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

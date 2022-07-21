@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Role id="{4178df9e-4ea5-e811-8149-000d3a3a2732}" name="Playbook Manager" isinherited="0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <RolePrivileges>
+    <RolePrivilege name="prvAppendmsdyn_callablecontext" level="Global" />
+    <RolePrivilege name="prvAppendmsdyn_playbookactivity" level="Global" />
+    <RolePrivilege name="prvAppendmsdyn_playbookactivityattribute" level="Global" />
+    <RolePrivilege name="prvAppendmsdyn_playbookcategory" level="Global" />
+    <RolePrivilege name="prvAppendmsdyn_playbookinstance" level="Global" />
+    <RolePrivilege name="prvAppendmsdyn_playbooktemplate" level="Global" />
+    <RolePrivilege name="prvAppendTomsdyn_callablecontext" level="Global" />
+    <RolePrivilege name="prvAppendTomsdyn_playbookactivity" level="Global" />
+    <RolePrivilege name="prvAppendTomsdyn_playbookactivityattribute" level="Global" />
+    <RolePrivilege name="prvAppendTomsdyn_playbookcategory" level="Global" />
+    <RolePrivilege name="prvAppendTomsdyn_playbookinstance" level="Global" />
+    <RolePrivilege name="prvAppendTomsdyn_playbooktemplate" level="Global" />
+    <RolePrivilege name="prvAssignmsdyn_callablecontext" level="Global" />
+    <RolePrivilege name="prvAssignmsdyn_playbookactivity" level="Global" />
+    <RolePrivilege name="prvAssignmsdyn_playbookactivityattribute" level="Global" />
+    <RolePrivilege name="prvAssignmsdyn_playbookcategory" level="Global" />
+    <RolePrivilege name="prvAssignmsdyn_playbookinstance" level="Global" />
+    <RolePrivilege name="prvAssignmsdyn_playbooktemplate" level="Global" />
+    <RolePrivilege name="prvCreatemsdyn_callablecontext" level="Global" />
+    <RolePrivilege name="prvCreatemsdyn_playbookactivity" level="Global" />
+    <RolePrivilege name="prvCreatemsdyn_playbookactivityattribute" level="Global" />
+    <RolePrivilege name="prvCreatemsdyn_playbookcategory" level="Global" />
+    <RolePrivilege name="prvCreatemsdyn_playbookinstance" level="Global" />
+    <RolePrivilege name="prvCreatemsdyn_playbooktemplate" level="Global" />
+    <RolePrivilege name="prvCreateSharePointData" level="Global" />
+    <RolePrivilege name="prvDeletemsdyn_callablecontext" level="Global" />
+    <RolePrivilege name="prvDeletemsdyn_playbookactivity" level="Global" />
+    <RolePrivilege name="prvDeletemsdyn_playbookactivityattribute" level="Global" />
+    <RolePrivilege name="prvDeletemsdyn_playbookcategory" level="Global" />
+    <RolePrivilege name="prvDeletemsdyn_playbookinstance" level="Global" />
+    <RolePrivilege name="prvDeletemsdyn_playbooktemplate" level="Global" />
+    <RolePrivilege name="prvReadmsdyn_callablecontext" level="Global" />
+    <RolePrivilege name="prvReadmsdyn_playbookactivity" level="Global" />
+    <RolePrivilege name="prvReadmsdyn_playbookactivityattribute" level="Global" />
+    <RolePrivilege name="prvReadmsdyn_playbookcategory" level="Global" />
+    <RolePrivilege name="prvReadmsdyn_playbookinstance" level="Global" />
+    <RolePrivilege name="prvReadmsdyn_playbooktemplate" level="Global" />
+    <RolePrivilege name="prvReadmsdyn_teamsdialeradminsettings" level="Global" />
+    <RolePrivilege name="prvReadPluginAssembly" level="Global" />
+    <RolePrivilege name="prvReadPluginType" level="Global" />
+    <RolePrivilege name="prvReadSdkMessage" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStep" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStepImage" level="Global" />
+    <RolePrivilege name="prvReadSharePointData" level="Global" />
+    <RolePrivilege name="prvReadSharePointDocument" level="Global" />
+    <RolePrivilege name="prvSharemsdyn_callablecontext" level="Global" />
+    <RolePrivilege name="prvSharemsdyn_playbookactivity" level="Global" />
+    <RolePrivilege name="prvSharemsdyn_playbookactivityattribute" level="Global" />
+    <RolePrivilege name="prvSharemsdyn_playbookcategory" level="Global" />
+    <RolePrivilege name="prvSharemsdyn_playbookinstance" level="Global" />
+    <RolePrivilege name="prvSharemsdyn_playbooktemplate" level="Global" />
+    <RolePrivilege name="prvWritemsdyn_callablecontext" level="Global" />
+    <RolePrivilege name="prvWritemsdyn_playbookactivity" level="Global" />
+    <RolePrivilege name="prvWritemsdyn_playbookactivityattribute" level="Global" />
+    <RolePrivilege name="prvWritemsdyn_playbookcategory" level="Global" />
+    <RolePrivilege name="prvWritemsdyn_playbookinstance" level="Global" />
+    <RolePrivilege name="prvWritemsdyn_playbooktemplate" level="Global" />
+    <RolePrivilege name="prvWriteSharePointData" level="Global" />
+  </RolePrivileges>
+</Role>
