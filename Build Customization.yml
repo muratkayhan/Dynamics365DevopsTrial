@@ -1,0 +1,54 @@
+# 'Allow scripts to access the OAuth token' was selected in pipeline.  Add the following YAML to any steps requiring access:
+#       env:
+#           MY_ACCESS_TOKEN: $(System.AccessToken)
+# Variable 'Commit detail' was defined in the Variables tab
+# Variable 'Committer Email Address' was defined in the Variables tab
+# Variable 'Committer Name' was defined in the Variables tab
+# Variable Group 'Dynamics365.Variables' was defined in the Variables tab
+jobs:
+- job: Job_1
+  displayName: Agent job 1
+  pool:
+    vmImage: windows-2019
+  steps:
+  - checkout: self
+    persistCredentials: True
+  - task: MSCRMToolInstaller@12
+    displayName: Power DevOps Tool Installer
+  - task: MSCRMPing@12
+    displayName: Ping Environment
+    inputs:
+      crmConnectionString: $(ConnectionString_Source)
+  - task: MSCRMSetVersion@12
+    displayName: Set Version
+    inputs:
+      crmConnectionString: $(ConnectionString_Source)
+      solutionName: customizations
+      versionNumber: 1.0.0.$(Build.BuildNumber)
+  - task: MSCRMExportSolution@12
+    displayName: 'Export Solution: customizations Unmanaged'
+    inputs:
+      crmConnectionString: $(ConnectionString_Source)
+      solutionName: customizations
+  - task: MSCRMExtractSolution@12
+    displayName: Extract Solution
+    inputs:
+      unpackedFilesFolder: Dynamics365Trial.SolutionComponents/Solutions/Customizations
+      solutionFile: $(build.binariesdirectory)\customizations.zip
+      localize: false
+  - task: CmdLine@2
+    displayName: Command Line Script
+    inputs:
+      script: "git config --global user.email \"$(Committer Email Address)\"\ngit config --global user.name \"$(Committer Name)\"\ngit checkout -b master\n   echo 'This is a test' > data.txt\n   git add -A\n   git commit -m \"deployment $(Build.BuildNumber) $(Commit detail)\"\n   git push --set-upstream origin master "
+  - task: MSCRMExportSolution@12
+    displayName: 'Export Solution: customizations Managed'
+    inputs:
+      crmConnectionString: $(ConnectionString_Source)
+      solutionName: customizations
+      exportManaged: true
+      exportUnmanaged: false
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact: drop'
+    inputs:
+      PathtoPublish: $(Build.binariesdirectory)
+...
