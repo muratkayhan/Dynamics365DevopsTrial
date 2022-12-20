@@ -1,0 +1,2160 @@
+{
+  "source": 2,
+  "revision": 18,
+  "description": null,
+  "createdBy": {
+    "displayName": "Murat Kayhan",
+    "url": "https://spsprodeus23.vssps.visualstudio.com/A7cdf2f2a-a0fa-4a7b-b924-c90a07228fd4/_apis/Identities/eba5496c-4719-6352-9ed2-8f44bc5623ae",
+    "_links": {
+      "avatar": {
+        "href": "https://sisn.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.ZWJhNTQ5NmMtNDcxOS03MzUyLTllZDItOGY0NGJjNTYyM2Fl"
+      }
+    },
+    "id": "eba5496c-4719-6352-9ed2-8f44bc5623ae",
+    "uniqueName": "mkayhan@sisn.com",
+    "imageUrl": "https://sisn.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.ZWJhNTQ5NmMtNDcxOS03MzUyLTllZDItOGY0NGJjNTYyM2Fl",
+    "descriptor": "aad.ZWJhNTQ5NmMtNDcxOS03MzUyLTllZDItOGY0NGJjNTYyM2Fl"
+  },
+  "createdOn": "2022-07-22T21:41:18.337Z",
+  "modifiedBy": {
+    "displayName": "Murat Kayhan",
+    "url": "https://spsprodeus23.vssps.visualstudio.com/A7cdf2f2a-a0fa-4a7b-b924-c90a07228fd4/_apis/Identities/eba5496c-4719-6352-9ed2-8f44bc5623ae",
+    "_links": {
+      "avatar": {
+        "href": "https://sisn.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.ZWJhNTQ5NmMtNDcxOS03MzUyLTllZDItOGY0NGJjNTYyM2Fl"
+      }
+    },
+    "id": "eba5496c-4719-6352-9ed2-8f44bc5623ae",
+    "uniqueName": "mkayhan@sisn.com",
+    "imageUrl": "https://sisn.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.ZWJhNTQ5NmMtNDcxOS03MzUyLTllZDItOGY0NGJjNTYyM2Fl",
+    "descriptor": "aad.ZWJhNTQ5NmMtNDcxOS03MzUyLTllZDItOGY0NGJjNTYyM2Fl"
+  },
+  "modifiedOn": "2022-10-19T14:10:38.693Z",
+  "isDeleted": false,
+  "lastRelease": {
+    "id": 32,
+    "name": "Release-32",
+    "artifacts": [
+    ],
+    "_links": {
+    },
+    "description": "Triggered by Build XXX Solutions 23660.",
+    "releaseDefinition": {
+      "id": 2,
+      "projectReference": null,
+      "_links": {
+      }
+    },
+    "createdOn": "2022-11-28T15:37:45.880Z",
+    "createdBy": {
+      "displayName": "Andy Grilk",
+      "url": "https://spsprodeus23.vssps.visualstudio.com/A7cdf2f2a-a0fa-4a7b-b924-c90a07228fd4/_apis/Identities/8b37734f-0c03-6f9c-985f-e85924f24eeb",
+      "_links": {
+        "avatar": {
+          "href": "https://sisn.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.OGIzNzczNGYtMGMwMy03ZjljLTk4NWYtZTg1OTI0ZjI0ZWVi"
+        }
+      },
+      "id": "8b37734f-0c03-6f9c-985f-e85924f24eeb",
+      "uniqueName": "agrilk@sisn.com",
+      "imageUrl": "https://sisn.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.OGIzNzczNGYtMGMwMy03ZjljLTk4NWYtZTg1OTI0ZjI0ZWVi",
+      "descriptor": "aad.OGIzNzczNGYtMGMwMy03ZjljLTk4NWYtZTg1OTI0ZjI0ZWVi"
+    }
+  },
+  "variables": {
+  },
+  "variableGroups": [
+    3
+  ],
+  "environments": [
+    {
+      "id": 2,
+      "name": "Unit Test",
+      "rank": 1,
+      "owner": {
+        "displayName": "Andy Grilk",
+        "url": "https://spsprodeus23.vssps.visualstudio.com/A7cdf2f2a-a0fa-4a7b-b924-c90a07228fd4/_apis/Identities/8b37734f-0c03-6f9c-985f-e85924f24eeb",
+        "_links": {
+          "avatar": {
+            "href": "https://sisn.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.OGIzNzczNGYtMGMwMy03ZjljLTk4NWYtZTg1OTI0ZjI0ZWVi"
+          }
+        },
+        "id": "8b37734f-0c03-6f9c-985f-e85924f24eeb",
+        "uniqueName": "agrilk@sisn.com",
+        "imageUrl": "https://sisn.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.OGIzNzczNGYtMGMwMy03ZjljLTk4NWYtZTg1OTI0ZjI0ZWVi",
+        "descriptor": "aad.OGIzNzczNGYtMGMwMy03ZjljLTk4NWYtZTg1OTI0ZjI0ZWVi"
+      },
+      "variables": {
+      },
+      "variableGroups": [
+      ],
+      "preDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 4
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 1
+        }
+      },
+      "deployStep": {
+        "id": 5
+      },
+      "postDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 6
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 2
+        }
+      },
+      "deployPhases": [
+        {
+          "deploymentInput": {
+            "parallelExecution": {
+              "parallelExecutionType": 0
+            },
+            "agentSpecification": {
+              "identifier": "windows-2022"
+            },
+            "skipArtifactsDownload": false,
+            "artifactsDownloadInput": {
+              "downloadInputs": [
+              ]
+            },
+            "queueId": 1451,
+            "demands": [
+            ],
+            "enableAccessToken": false,
+            "timeoutInMinutes": 0,
+            "jobCancelTimeoutInMinutes": 1,
+            "condition": "succeeded()",
+            "overrideInputs": {
+            }
+          },
+          "rank": 1,
+          "phaseType": 1,
+          "name": "Agent job",
+          "refName": null,
+          "workflowTasks": [
+            {
+              "environment": {
+              },
+              "taskId": "04ad1c72-5e49-4686-8a3a-dda6948b0fcd",
+              "version": "12.*",
+              "name": "Power DevOps Tool Installer",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "nugetFeed": "official",
+                "nugetSource": "https://api.nuget.org/v3/index.json",
+                "nugetUsername": "",
+                "nugetPassword": "",
+                "nugetUseProxy": "true",
+                "psFeed": "official",
+                "psSource": "https://www.powershellgallery.com/api/v2",
+                "psUsername": "",
+                "psPassword": "",
+                "psUseProxy": "true",
+                "coreToolsVersion": "",
+                "crmConnectorVersion": "",
+                "packageDeploymentVersion": "",
+                "onlineAPIVersion": "",
+                "checkerVersion": "",
+                "configMigrationVersion": "",
+                "powerAppsAdminVersion": "",
+                "powerAppsVersion": "",
+                "powerAppsCLIVersion": "",
+                "msalPSVersion": "",
+                "mgUsersVersion": "",
+                "mgGroupsVersion": ""
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "d8587a60-cd25-11e6-a324-f3fd298c325e",
+              "version": "12.*",
+              "name": "Ping Environment",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXUnitTestFS)"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
+              "version": "12.*",
+              "name": "Import Solution XXXPCFControls_managed",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXUnitTestFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXPCFControls_managed.zip",
+                "publishWorkflows": "false",
+                "overwriteUnmanagedCustomizations": "true",
+                "skipProductUpdateDependencies": "false",
+                "convertToManaged": "true",
+                "holdingSolution": "false",
+                "override": "true",
+                "useAsyncMode": "true",
+                "asyncWaitTimeout": "1200",
+                "logsDirectory": "",
+                "logFileName": "",
+                "crmConnectionTimeout": "120"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
+              "version": "12.*",
+              "name": "Import Solution XXXCustomizations_managed",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXUnitTestFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXCustomizations_managed.zip",
+                "publishWorkflows": "false",
+                "overwriteUnmanagedCustomizations": "true",
+                "skipProductUpdateDependencies": "false",
+                "convertToManaged": "true",
+                "holdingSolution": "false",
+                "override": "true",
+                "useAsyncMode": "true",
+                "asyncWaitTimeout": "1200",
+                "logsDirectory": "",
+                "logFileName": "",
+                "crmConnectionTimeout": "120"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
+              "version": "12.*",
+              "name": "Import Solution XXXProcesses_managed",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXUnitTestFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXProcesses_managed.zip",
+                "publishWorkflows": "false",
+                "overwriteUnmanagedCustomizations": "true",
+                "skipProductUpdateDependencies": "false",
+                "convertToManaged": "true",
+                "holdingSolution": "false",
+                "override": "true",
+                "useAsyncMode": "true",
+                "asyncWaitTimeout": "1200",
+                "logsDirectory": "",
+                "logFileName": "",
+                "crmConnectionTimeout": "120"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
+              "version": "12.*",
+              "name": "Import Solution XXXSecurityRoles_managed",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXUnitTestFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXSecurityRoles_managed.zip",
+                "publishWorkflows": "false",
+                "overwriteUnmanagedCustomizations": "true",
+                "skipProductUpdateDependencies": "false",
+                "convertToManaged": "true",
+                "holdingSolution": "false",
+                "override": "true",
+                "useAsyncMode": "true",
+                "asyncWaitTimeout": "1200",
+                "logsDirectory": "",
+                "logFileName": "",
+                "crmConnectionTimeout": "120"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
+              "version": "12.*",
+              "name": "Import Solution XXXModelDrivenApps_managed",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXUnitTestFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXModelDrivenApps_managed.zip",
+                "publishWorkflows": "false",
+                "overwriteUnmanagedCustomizations": "true",
+                "skipProductUpdateDependencies": "false",
+                "convertToManaged": "true",
+                "holdingSolution": "false",
+                "override": "true",
+                "useAsyncMode": "true",
+                "asyncWaitTimeout": "1200",
+                "logsDirectory": "",
+                "logFileName": "",
+                "crmConnectionTimeout": "120"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "f64d3db3-f19a-41dd-bdb8-f8f0e60a4bb1",
+              "version": "12.*",
+              "name": "Publish Customizations",
+              "refName": "",
+              "enabled": false,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXUatFS)",
+                "crmConnectionTimeout": "1200"
+              }
+            }
+          ]
+        }
+      ],
+      "environmentOptions": {
+        "emailNotificationType": "OnlyOnFailure",
+        "emailRecipients": "release.environment.owner;release.creator",
+        "skipArtifactsDownload": false,
+        "timeoutInMinutes": 0,
+        "enableAccessToken": false,
+        "publishDeploymentStatus": true,
+        "badgeEnabled": false,
+        "autoLinkWorkItems": false,
+        "pullRequestDeploymentEnabled": false
+      },
+      "demands": [
+      ],
+      "conditions": [
+        {
+          "name": "ReleaseStarted",
+          "conditionType": 1,
+          "value": ""
+        }
+      ],
+      "executionPolicy": {
+        "concurrencyCount": 1,
+        "queueDepthCount": 0
+      },
+      "schedules": [
+      ],
+      "currentRelease": {
+        "id": 32,
+        "url": "https://sisn.vsrm.visualstudio.com/324472a5-cd8f-4a47-8983-388532d7e4c5/_apis/Release/releases/32",
+        "_links": {
+        }
+      },
+      "retentionPolicy": {
+        "daysToKeep": 30,
+        "releasesToKeep": 3,
+        "retainBuild": true
+      },
+      "processParameters": {
+      },
+      "properties": {
+        "BoardsEnvironmentType": {
+          "$type": "System.String",
+          "$value": "unmapped"
+        },
+        "LinkBoardsWorkItems": {
+          "$type": "System.String",
+          "$value": "False"
+        }
+      },
+      "preDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": [
+        ]
+      },
+      "postDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": [
+        ]
+      },
+      "environmentTriggers": [
+      ],
+      "badgeUrl": "https://sisn.vsrm.visualstudio.com/_apis/public/Release/badge/324472a5-cd8f-4a47-8983-388532d7e4c5/2/2"
+    },
+    {
+      "id": 6,
+      "name": "GOLD",
+      "rank": 4,
+      "owner": {
+        "displayName": "Andy Grilk",
+        "url": "https://spsprodeus23.vssps.visualstudio.com/A7cdf2f2a-a0fa-4a7b-b924-c90a07228fd4/_apis/Identities/8b37734f-0c03-6f9c-985f-e85924f24eeb",
+        "_links": {
+          "avatar": {
+            "href": "https://sisn.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.OGIzNzczNGYtMGMwMy03ZjljLTk4NWYtZTg1OTI0ZjI0ZWVi"
+          }
+        },
+        "id": "8b37734f-0c03-6f9c-985f-e85924f24eeb",
+        "uniqueName": "agrilk@sisn.com",
+        "imageUrl": "https://sisn.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.OGIzNzczNGYtMGMwMy03ZjljLTk4NWYtZTg1OTI0ZjI0ZWVi",
+        "descriptor": "aad.OGIzNzczNGYtMGMwMy03ZjljLTk4NWYtZTg1OTI0ZjI0ZWVi"
+      },
+      "variables": {
+      },
+      "variableGroups": [
+      ],
+      "preDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": false,
+            "isNotificationOn": false,
+            "approver": {
+              "displayName": "Andy Grilk",
+              "url": "https://spsprodeus23.vssps.visualstudio.com/A7cdf2f2a-a0fa-4a7b-b924-c90a07228fd4/_apis/Identities/8b37734f-0c03-6f9c-985f-e85924f24eeb",
+              "_links": {
+                "avatar": {
+                  "href": "https://sisn.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.OGIzNzczNGYtMGMwMy03ZjljLTk4NWYtZTg1OTI0ZjI0ZWVi"
+                }
+              },
+              "id": "8b37734f-0c03-6f9c-985f-e85924f24eeb",
+              "uniqueName": "agrilk@sisn.com",
+              "imageUrl": "https://sisn.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.OGIzNzczNGYtMGMwMy03ZjljLTk4NWYtZTg1OTI0ZjI0ZWVi",
+              "descriptor": "aad.OGIzNzczNGYtMGMwMy03ZjljLTk4NWYtZTg1OTI0ZjI0ZWVi"
+            },
+            "id": 28
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": true,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 1
+        }
+      },
+      "deployStep": {
+        "id": 17
+      },
+      "postDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 18
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 2
+        }
+      },
+      "deployPhases": [
+        {
+          "deploymentInput": {
+            "parallelExecution": {
+              "parallelExecutionType": 0
+            },
+            "agentSpecification": {
+              "identifier": "windows-2022"
+            },
+            "skipArtifactsDownload": false,
+            "artifactsDownloadInput": {
+              "downloadInputs": [
+              ]
+            },
+            "queueId": 1451,
+            "demands": [
+            ],
+            "enableAccessToken": false,
+            "timeoutInMinutes": 0,
+            "jobCancelTimeoutInMinutes": 1,
+            "condition": "succeeded()",
+            "overrideInputs": {
+            }
+          },
+          "rank": 1,
+          "phaseType": 1,
+          "name": "Agent job",
+          "refName": null,
+          "workflowTasks": [
+            {
+              "environment": {
+              },
+              "taskId": "04ad1c72-5e49-4686-8a3a-dda6948b0fcd",
+              "version": "12.*",
+              "name": "Power DevOps Tool Installer",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "nugetFeed": "official",
+                "nugetSource": "https://api.nuget.org/v3/index.json",
+                "nugetUsername": "",
+                "nugetPassword": "",
+                "nugetUseProxy": "true",
+                "psFeed": "official",
+                "psSource": "https://www.powershellgallery.com/api/v2",
+                "psUsername": "",
+                "psPassword": "",
+                "psUseProxy": "true",
+                "coreToolsVersion": "",
+                "crmConnectorVersion": "",
+                "packageDeploymentVersion": "",
+                "onlineAPIVersion": "",
+                "checkerVersion": "",
+                "configMigrationVersion": "",
+                "powerAppsAdminVersion": "",
+                "powerAppsVersion": "",
+                "powerAppsCLIVersion": "",
+                "msalPSVersion": "",
+                "mgUsersVersion": "",
+                "mgGroupsVersion": ""
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "d8587a60-cd25-11e6-a324-f3fd298c325e",
+              "version": "12.*",
+              "name": "Ping Environment",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXGoldFS)"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
+              "version": "12.*",
+              "name": "Import Solution XXXPCFControls_managed",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXGoldFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXPCFControls_managed.zip",
+                "publishWorkflows": "false",
+                "overwriteUnmanagedCustomizations": "true",
+                "skipProductUpdateDependencies": "false",
+                "convertToManaged": "true",
+                "holdingSolution": "false",
+                "override": "true",
+                "useAsyncMode": "true",
+                "asyncWaitTimeout": "1200",
+                "logsDirectory": "",
+                "logFileName": "",
+                "crmConnectionTimeout": "120"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
+              "version": "12.*",
+              "name": "Import Solution XXXCustomizations_managed",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXGoldFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXCustomizations_managed.zip",
+                "publishWorkflows": "false",
+                "overwriteUnmanagedCustomizations": "true",
+                "skipProductUpdateDependencies": "false",
+                "convertToManaged": "true",
+                "holdingSolution": "false",
+                "override": "true",
+                "useAsyncMode": "true",
+                "asyncWaitTimeout": "1200",
+                "logsDirectory": "",
+                "logFileName": "",
+                "crmConnectionTimeout": "120"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
+              "version": "12.*",
+              "name": "Import Solution XXXProcesses_managed",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXGoldFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXProcesses_managed.zip",
+                "publishWorkflows": "false",
+                "overwriteUnmanagedCustomizations": "true",
+                "skipProductUpdateDependencies": "false",
+                "convertToManaged": "true",
+                "holdingSolution": "false",
+                "override": "true",
+                "useAsyncMode": "true",
+                "asyncWaitTimeout": "1200",
+                "logsDirectory": "",
+                "logFileName": "",
+                "crmConnectionTimeout": "120"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
+              "version": "12.*",
+              "name": "Import Solution XXXSecurityRoles_managed",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXGoldFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXSecurityRoles_managed.zip",
+                "publishWorkflows": "false",
+                "overwriteUnmanagedCustomizations": "true",
+                "skipProductUpdateDependencies": "false",
+                "convertToManaged": "true",
+                "holdingSolution": "false",
+                "override": "true",
+                "useAsyncMode": "true",
+                "asyncWaitTimeout": "1200",
+                "logsDirectory": "",
+                "logFileName": "",
+                "crmConnectionTimeout": "120"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
+              "version": "12.*",
+              "name": "Import Solution XXXModelDrivenApps_managed",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXGoldFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXModelDrivenApps_managed.zip",
+                "publishWorkflows": "false",
+                "overwriteUnmanagedCustomizations": "true",
+                "skipProductUpdateDependencies": "false",
+                "convertToManaged": "true",
+                "holdingSolution": "false",
+                "override": "true",
+                "useAsyncMode": "true",
+                "asyncWaitTimeout": "1200",
+                "logsDirectory": "",
+                "logFileName": "",
+                "crmConnectionTimeout": "120"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "f64d3db3-f19a-41dd-bdb8-f8f0e60a4bb1",
+              "version": "12.*",
+              "name": "Publish Customizations",
+              "refName": "",
+              "enabled": false,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXUatFS)",
+                "crmConnectionTimeout": "1200"
+              }
+            }
+          ]
+        }
+      ],
+      "environmentOptions": {
+        "emailNotificationType": "OnlyOnFailure",
+        "emailRecipients": "release.environment.owner;release.creator",
+        "skipArtifactsDownload": false,
+        "timeoutInMinutes": 0,
+        "enableAccessToken": false,
+        "publishDeploymentStatus": true,
+        "badgeEnabled": false,
+        "autoLinkWorkItems": false,
+        "pullRequestDeploymentEnabled": false
+      },
+      "demands": [
+      ],
+      "conditions": [
+      ],
+      "executionPolicy": {
+        "concurrencyCount": 1,
+        "queueDepthCount": 0
+      },
+      "schedules": [
+      ],
+      "currentRelease": {
+        "id": 28,
+        "url": "https://sisn.vsrm.visualstudio.com/324472a5-cd8f-4a47-8983-388532d7e4c5/_apis/Release/releases/28",
+        "_links": {
+        }
+      },
+      "retentionPolicy": {
+        "daysToKeep": 30,
+        "releasesToKeep": 3,
+        "retainBuild": true
+      },
+      "processParameters": {
+      },
+      "properties": {
+        "BoardsEnvironmentType": {
+          "$type": "System.String",
+          "$value": "unmapped"
+        },
+        "LinkBoardsWorkItems": {
+          "$type": "System.String",
+          "$value": "False"
+        }
+      },
+      "preDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": [
+        ]
+      },
+      "postDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": [
+        ]
+      },
+      "environmentTriggers": [
+      ],
+      "badgeUrl": "https://sisn.vsrm.visualstudio.com/_apis/public/Release/badge/324472a5-cd8f-4a47-8983-388532d7e4c5/2/6"
+    },
+    {
+      "id": 7,
+      "name": "CRP",
+      "rank": 3,
+      "owner": {
+        "displayName": "Andy Grilk",
+        "url": "https://spsprodeus23.vssps.visualstudio.com/A7cdf2f2a-a0fa-4a7b-b924-c90a07228fd4/_apis/Identities/8b37734f-0c03-6f9c-985f-e85924f24eeb",
+        "_links": {
+          "avatar": {
+            "href": "https://sisn.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.OGIzNzczNGYtMGMwMy03ZjljLTk4NWYtZTg1OTI0ZjI0ZWVi"
+          }
+        },
+        "id": "8b37734f-0c03-6f9c-985f-e85924f24eeb",
+        "uniqueName": "agrilk@sisn.com",
+        "imageUrl": "https://sisn.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.OGIzNzczNGYtMGMwMy03ZjljLTk4NWYtZTg1OTI0ZjI0ZWVi",
+        "descriptor": "aad.OGIzNzczNGYtMGMwMy03ZjljLTk4NWYtZTg1OTI0ZjI0ZWVi"
+      },
+      "variables": {
+      },
+      "variableGroups": [
+      ],
+      "preDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 19
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 1
+        }
+      },
+      "deployStep": {
+        "id": 20
+      },
+      "postDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 21
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 2
+        }
+      },
+      "deployPhases": [
+        {
+          "deploymentInput": {
+            "parallelExecution": {
+              "parallelExecutionType": 0
+            },
+            "agentSpecification": {
+              "identifier": "windows-2022"
+            },
+            "skipArtifactsDownload": false,
+            "artifactsDownloadInput": {
+              "downloadInputs": [
+              ]
+            },
+            "queueId": 1451,
+            "demands": [
+            ],
+            "enableAccessToken": false,
+            "timeoutInMinutes": 0,
+            "jobCancelTimeoutInMinutes": 1,
+            "condition": "succeeded()",
+            "overrideInputs": {
+            }
+          },
+          "rank": 1,
+          "phaseType": 1,
+          "name": "Agent job",
+          "refName": null,
+          "workflowTasks": [
+            {
+              "environment": {
+              },
+              "taskId": "04ad1c72-5e49-4686-8a3a-dda6948b0fcd",
+              "version": "12.*",
+              "name": "Power DevOps Tool Installer",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "nugetFeed": "official",
+                "nugetSource": "https://api.nuget.org/v3/index.json",
+                "nugetUsername": "",
+                "nugetPassword": "",
+                "nugetUseProxy": "true",
+                "psFeed": "official",
+                "psSource": "https://www.powershellgallery.com/api/v2",
+                "psUsername": "",
+                "psPassword": "",
+                "psUseProxy": "true",
+                "coreToolsVersion": "",
+                "crmConnectorVersion": "",
+                "packageDeploymentVersion": "",
+                "onlineAPIVersion": "",
+                "checkerVersion": "",
+                "configMigrationVersion": "",
+                "powerAppsAdminVersion": "",
+                "powerAppsVersion": "",
+                "powerAppsCLIVersion": "",
+                "msalPSVersion": "",
+                "mgUsersVersion": "",
+                "mgGroupsVersion": ""
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "d8587a60-cd25-11e6-a324-f3fd298c325e",
+              "version": "12.*",
+              "name": "Ping Environment",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXCrpFS)"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
+              "version": "12.*",
+              "name": "Import Solution XXXPCFControls_managed",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXCrpFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXPCFControls_managed.zip",
+                "publishWorkflows": "false",
+                "overwriteUnmanagedCustomizations": "true",
+                "skipProductUpdateDependencies": "false",
+                "convertToManaged": "true",
+                "holdingSolution": "false",
+                "override": "true",
+                "useAsyncMode": "true",
+                "asyncWaitTimeout": "1200",
+                "logsDirectory": "",
+                "logFileName": "",
+                "crmConnectionTimeout": "120"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
+              "version": "12.*",
+              "name": "Import Solution XXXCustomizations_managed",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXCrpFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXCustomizations_managed.zip",
+                "publishWorkflows": "false",
+                "overwriteUnmanagedCustomizations": "true",
+                "skipProductUpdateDependencies": "false",
+                "convertToManaged": "true",
+                "holdingSolution": "false",
+                "override": "true",
+                "useAsyncMode": "true",
+                "asyncWaitTimeout": "1200",
+                "logsDirectory": "",
+                "logFileName": "",
+                "crmConnectionTimeout": "120"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
+              "version": "12.*",
+              "name": "Import Solution XXXProcesses_managed",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXCrpFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXProcesses_managed.zip",
+                "publishWorkflows": "false",
+                "overwriteUnmanagedCustomizations": "true",
+                "skipProductUpdateDependencies": "false",
+                "convertToManaged": "true",
+                "holdingSolution": "false",
+                "override": "true",
+                "useAsyncMode": "true",
+                "asyncWaitTimeout": "1200",
+                "logsDirectory": "",
+                "logFileName": "",
+                "crmConnectionTimeout": "120"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
+              "version": "12.*",
+              "name": "Import Solution XXXSecurityRoles_managed",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXCrpFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXSecurityRoles_managed.zip",
+                "publishWorkflows": "false",
+                "overwriteUnmanagedCustomizations": "true",
+                "skipProductUpdateDependencies": "false",
+                "convertToManaged": "true",
+                "holdingSolution": "false",
+                "override": "true",
+                "useAsyncMode": "true",
+                "asyncWaitTimeout": "1200",
+                "logsDirectory": "",
+                "logFileName": "",
+                "crmConnectionTimeout": "120"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
+              "version": "12.*",
+              "name": "Import Solution XXXModelDrivenApps_managed",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXCrpFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXModelDrivenApps_managed.zip",
+                "publishWorkflows": "false",
+                "overwriteUnmanagedCustomizations": "true",
+                "skipProductUpdateDependencies": "false",
+                "convertToManaged": "true",
+                "holdingSolution": "false",
+                "override": "true",
+                "useAsyncMode": "true",
+                "asyncWaitTimeout": "1200",
+                "logsDirectory": "",
+                "logFileName": "",
+                "crmConnectionTimeout": "120"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "f64d3db3-f19a-41dd-bdb8-f8f0e60a4bb1",
+              "version": "12.*",
+              "name": "Publish Customizations",
+              "refName": "",
+              "enabled": false,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXUatFS)",
+                "crmConnectionTimeout": "1200"
+              }
+            }
+          ]
+        }
+      ],
+      "environmentOptions": {
+        "emailNotificationType": "OnlyOnFailure",
+        "emailRecipients": "release.environment.owner;release.creator",
+        "skipArtifactsDownload": false,
+        "timeoutInMinutes": 0,
+        "enableAccessToken": false,
+        "publishDeploymentStatus": true,
+        "badgeEnabled": false,
+        "autoLinkWorkItems": false,
+        "pullRequestDeploymentEnabled": false
+      },
+      "demands": [
+      ],
+      "conditions": [
+      ],
+      "executionPolicy": {
+        "concurrencyCount": 1,
+        "queueDepthCount": 0
+      },
+      "schedules": [
+      ],
+      "currentRelease": {
+        "id": 28,
+        "url": "https://sisn.vsrm.visualstudio.com/324472a5-cd8f-4a47-8983-388532d7e4c5/_apis/Release/releases/28",
+        "_links": {
+        }
+      },
+      "retentionPolicy": {
+        "daysToKeep": 30,
+        "releasesToKeep": 3,
+        "retainBuild": true
+      },
+      "processParameters": {
+      },
+      "properties": {
+        "BoardsEnvironmentType": {
+          "$type": "System.String",
+          "$value": "unmapped"
+        },
+        "LinkBoardsWorkItems": {
+          "$type": "System.String",
+          "$value": "False"
+        }
+      },
+      "preDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": [
+        ]
+      },
+      "postDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": [
+        ]
+      },
+      "environmentTriggers": [
+      ],
+      "badgeUrl": "https://sisn.vsrm.visualstudio.com/_apis/public/Release/badge/324472a5-cd8f-4a47-8983-388532d7e4c5/2/7"
+    },
+    {
+      "id": 9,
+      "name": "PROD",
+      "rank": 5,
+      "owner": {
+        "displayName": "Andy Grilk",
+        "url": "https://spsprodeus23.vssps.visualstudio.com/A7cdf2f2a-a0fa-4a7b-b924-c90a07228fd4/_apis/Identities/8b37734f-0c03-6f9c-985f-e85924f24eeb",
+        "_links": {
+          "avatar": {
+            "href": "https://sisn.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.OGIzNzczNGYtMGMwMy03ZjljLTk4NWYtZTg1OTI0ZjI0ZWVi"
+          }
+        },
+        "id": "8b37734f-0c03-6f9c-985f-e85924f24eeb",
+        "uniqueName": "agrilk@sisn.com",
+        "imageUrl": "https://sisn.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.OGIzNzczNGYtMGMwMy03ZjljLTk4NWYtZTg1OTI0ZjI0ZWVi",
+        "descriptor": "aad.OGIzNzczNGYtMGMwMy03ZjljLTk4NWYtZTg1OTI0ZjI0ZWVi"
+      },
+      "variables": {
+      },
+      "variableGroups": [
+      ],
+      "preDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": false,
+            "isNotificationOn": false,
+            "approver": {
+              "displayName": "Andy Grilk",
+              "url": "https://spsprodeus23.vssps.visualstudio.com/A7cdf2f2a-a0fa-4a7b-b924-c90a07228fd4/_apis/Identities/8b37734f-0c03-6f9c-985f-e85924f24eeb",
+              "_links": {
+                "avatar": {
+                  "href": "https://sisn.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.OGIzNzczNGYtMGMwMy03ZjljLTk4NWYtZTg1OTI0ZjI0ZWVi"
+                }
+              },
+              "id": "8b37734f-0c03-6f9c-985f-e85924f24eeb",
+              "uniqueName": "agrilk@sisn.com",
+              "imageUrl": "https://sisn.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.OGIzNzczNGYtMGMwMy03ZjljLTk4NWYtZTg1OTI0ZjI0ZWVi",
+              "descriptor": "aad.OGIzNzczNGYtMGMwMy03ZjljLTk4NWYtZTg1OTI0ZjI0ZWVi"
+            },
+            "id": 29
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": true,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 1
+        }
+      },
+      "deployStep": {
+        "id": 26
+      },
+      "postDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 27
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 2
+        }
+      },
+      "deployPhases": [
+        {
+          "deploymentInput": {
+            "parallelExecution": {
+              "parallelExecutionType": 0
+            },
+            "agentSpecification": {
+              "identifier": "windows-2022"
+            },
+            "skipArtifactsDownload": false,
+            "artifactsDownloadInput": {
+              "downloadInputs": [
+              ]
+            },
+            "queueId": 1451,
+            "demands": [
+            ],
+            "enableAccessToken": false,
+            "timeoutInMinutes": 0,
+            "jobCancelTimeoutInMinutes": 1,
+            "condition": "succeeded()",
+            "overrideInputs": {
+            }
+          },
+          "rank": 1,
+          "phaseType": 1,
+          "name": "Agent job",
+          "refName": null,
+          "workflowTasks": [
+            {
+              "environment": {
+              },
+              "taskId": "04ad1c72-5e49-4686-8a3a-dda6948b0fcd",
+              "version": "12.*",
+              "name": "Power DevOps Tool Installer",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "nugetFeed": "official",
+                "nugetSource": "https://api.nuget.org/v3/index.json",
+                "nugetUsername": "",
+                "nugetPassword": "",
+                "nugetUseProxy": "true",
+                "psFeed": "official",
+                "psSource": "https://www.powershellgallery.com/api/v2",
+                "psUsername": "",
+                "psPassword": "",
+                "psUseProxy": "true",
+                "coreToolsVersion": "",
+                "crmConnectorVersion": "",
+                "packageDeploymentVersion": "",
+                "onlineAPIVersion": "",
+                "checkerVersion": "",
+                "configMigrationVersion": "",
+                "powerAppsAdminVersion": "",
+                "powerAppsVersion": "",
+                "powerAppsCLIVersion": "",
+                "msalPSVersion": "",
+                "mgUsersVersion": "",
+                "mgGroupsVersion": ""
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "d8587a60-cd25-11e6-a324-f3fd298c325e",
+              "version": "12.*",
+              "name": "Ping Environment",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXProdFS)"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
+              "version": "12.*",
+              "name": "Import Solution XXXPCFControls_managed",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXProdFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXPCFControls_managed.zip",
+                "publishWorkflows": "false",
+                "overwriteUnmanagedCustomizations": "true",
+                "skipProductUpdateDependencies": "false",
+                "convertToManaged": "true",
+                "holdingSolution": "false",
+                "override": "true",
+                "useAsyncMode": "true",
+                "asyncWaitTimeout": "1200",
+                "logsDirectory": "",
+                "logFileName": "",
+                "crmConnectionTimeout": "120"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
+              "version": "12.*",
+              "name": "Import Solution XXXCustomizations_managed",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXProdFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXCustomizations_managed.zip",
+                "publishWorkflows": "false",
+                "overwriteUnmanagedCustomizations": "true",
+                "skipProductUpdateDependencies": "false",
+                "convertToManaged": "true",
+                "holdingSolution": "false",
+                "override": "true",
+                "useAsyncMode": "true",
+                "asyncWaitTimeout": "1200",
+                "logsDirectory": "",
+                "logFileName": "",
+                "crmConnectionTimeout": "120"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
+              "version": "12.*",
+              "name": "Import Solution XXXProcesses_managed",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXProdFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXProcesses_managed.zip",
+                "publishWorkflows": "false",
+                "overwriteUnmanagedCustomizations": "true",
+                "skipProductUpdateDependencies": "false",
+                "convertToManaged": "true",
+                "holdingSolution": "false",
+                "override": "true",
+                "useAsyncMode": "true",
+                "asyncWaitTimeout": "1200",
+                "logsDirectory": "",
+                "logFileName": "",
+                "crmConnectionTimeout": "120"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
+              "version": "12.*",
+              "name": "Import Solution XXXSecurityRoles_managed",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXProdFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXSecurityRoles_managed.zip",
+                "publishWorkflows": "false",
+                "overwriteUnmanagedCustomizations": "true",
+                "skipProductUpdateDependencies": "false",
+                "convertToManaged": "true",
+                "holdingSolution": "false",
+                "override": "true",
+                "useAsyncMode": "true",
+                "asyncWaitTimeout": "1200",
+                "logsDirectory": "",
+                "logFileName": "",
+                "crmConnectionTimeout": "120"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
+              "version": "12.*",
+              "name": "Import Solution XXXModelDrivenApps_managed",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXProdFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXModelDrivenApps_managed.zip",
+                "publishWorkflows": "false",
+                "overwriteUnmanagedCustomizations": "true",
+                "skipProductUpdateDependencies": "false",
+                "convertToManaged": "true",
+                "holdingSolution": "false",
+                "override": "true",
+                "useAsyncMode": "true",
+                "asyncWaitTimeout": "1200",
+                "logsDirectory": "",
+                "logFileName": "",
+                "crmConnectionTimeout": "120"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "f64d3db3-f19a-41dd-bdb8-f8f0e60a4bb1",
+              "version": "12.*",
+              "name": "Publish Customizations",
+              "refName": "",
+              "enabled": false,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXUatFS)",
+                "crmConnectionTimeout": "1200"
+              }
+            }
+          ]
+        }
+      ],
+      "environmentOptions": {
+        "emailNotificationType": "OnlyOnFailure",
+        "emailRecipients": "release.environment.owner;release.creator",
+        "skipArtifactsDownload": false,
+        "timeoutInMinutes": 0,
+        "enableAccessToken": false,
+        "publishDeploymentStatus": true,
+        "badgeEnabled": false,
+        "autoLinkWorkItems": false,
+        "pullRequestDeploymentEnabled": false
+      },
+      "demands": [
+      ],
+      "conditions": [
+      ],
+      "executionPolicy": {
+        "concurrencyCount": 1,
+        "queueDepthCount": 0
+      },
+      "schedules": [
+      ],
+      "currentRelease": {
+        "id": 0,
+        "url": "https://sisn.vsrm.visualstudio.com/324472a5-cd8f-4a47-8983-388532d7e4c5/_apis/Release/releases/0",
+        "_links": {
+        }
+      },
+      "retentionPolicy": {
+        "daysToKeep": 30,
+        "releasesToKeep": 3,
+        "retainBuild": true
+      },
+      "processParameters": {
+      },
+      "properties": {
+        "BoardsEnvironmentType": {
+          "$type": "System.String",
+          "$value": "production"
+        },
+        "LinkBoardsWorkItems": {
+          "$type": "System.String",
+          "$value": "False"
+        }
+      },
+      "preDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": [
+        ]
+      },
+      "postDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": [
+        ]
+      },
+      "environmentTriggers": [
+      ],
+      "badgeUrl": "https://sisn.vsrm.visualstudio.com/_apis/public/Release/badge/324472a5-cd8f-4a47-8983-388532d7e4c5/2/9"
+    },
+    {
+      "id": 10,
+      "name": "UAT",
+      "rank": 2,
+      "owner": {
+        "displayName": "Andy Grilk",
+        "url": "https://spsprodeus23.vssps.visualstudio.com/A7cdf2f2a-a0fa-4a7b-b924-c90a07228fd4/_apis/Identities/8b37734f-0c03-6f9c-985f-e85924f24eeb",
+        "_links": {
+          "avatar": {
+            "href": "https://sisn.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.OGIzNzczNGYtMGMwMy03ZjljLTk4NWYtZTg1OTI0ZjI0ZWVi"
+          }
+        },
+        "id": "8b37734f-0c03-6f9c-985f-e85924f24eeb",
+        "uniqueName": "agrilk@sisn.com",
+        "imageUrl": "https://sisn.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.OGIzNzczNGYtMGMwMy03ZjljLTk4NWYtZTg1OTI0ZjI0ZWVi",
+        "descriptor": "aad.OGIzNzczNGYtMGMwMy03ZjljLTk4NWYtZTg1OTI0ZjI0ZWVi"
+      },
+      "variables": {
+      },
+      "variableGroups": [
+      ],
+      "preDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 30
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 1
+        }
+      },
+      "deployStep": {
+        "id": 31
+      },
+      "postDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 32
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 2
+        }
+      },
+      "deployPhases": [
+        {
+          "deploymentInput": {
+            "parallelExecution": {
+              "parallelExecutionType": 0
+            },
+            "agentSpecification": {
+              "identifier": "windows-2022"
+            },
+            "skipArtifactsDownload": false,
+            "artifactsDownloadInput": {
+              "downloadInputs": [
+              ]
+            },
+            "queueId": 1451,
+            "demands": [
+            ],
+            "enableAccessToken": false,
+            "timeoutInMinutes": 0,
+            "jobCancelTimeoutInMinutes": 1,
+            "condition": "succeeded()",
+            "overrideInputs": {
+            }
+          },
+          "rank": 1,
+          "phaseType": 1,
+          "name": "Agent job",
+          "refName": null,
+          "workflowTasks": [
+            {
+              "environment": {
+              },
+              "taskId": "04ad1c72-5e49-4686-8a3a-dda6948b0fcd",
+              "version": "12.*",
+              "name": "Power DevOps Tool Installer",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "nugetFeed": "official",
+                "nugetSource": "https://api.nuget.org/v3/index.json",
+                "nugetUsername": "",
+                "nugetPassword": "",
+                "nugetUseProxy": "true",
+                "psFeed": "official",
+                "psSource": "https://www.powershellgallery.com/api/v2",
+                "psUsername": "",
+                "psPassword": "",
+                "psUseProxy": "true",
+                "coreToolsVersion": "",
+                "crmConnectorVersion": "",
+                "packageDeploymentVersion": "",
+                "onlineAPIVersion": "",
+                "checkerVersion": "",
+                "configMigrationVersion": "",
+                "powerAppsAdminVersion": "",
+                "powerAppsVersion": "",
+                "powerAppsCLIVersion": "",
+                "msalPSVersion": "",
+                "mgUsersVersion": "",
+                "mgGroupsVersion": ""
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "d8587a60-cd25-11e6-a324-f3fd298c325e",
+              "version": "12.*",
+              "name": "Ping Environment",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXUatFS)"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
+              "version": "12.*",
+              "name": "Import Solution XXXPCFControls_managed",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXUatFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXPCFControls_managed.zip",
+                "publishWorkflows": "false",
+                "overwriteUnmanagedCustomizations": "true",
+                "skipProductUpdateDependencies": "false",
+                "convertToManaged": "true",
+                "holdingSolution": "false",
+                "override": "true",
+                "useAsyncMode": "true",
+                "asyncWaitTimeout": "1200",
+                "logsDirectory": "",
+                "logFileName": "",
+                "crmConnectionTimeout": "120"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
+              "version": "12.*",
+              "name": "Import Solution XXXCustomizations_managed",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXUatFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXCustomizations_managed.zip",
+                "publishWorkflows": "false",
+                "overwriteUnmanagedCustomizations": "true",
+                "skipProductUpdateDependencies": "false",
+                "convertToManaged": "true",
+                "holdingSolution": "false",
+                "override": "true",
+                "useAsyncMode": "true",
+                "asyncWaitTimeout": "1200",
+                "logsDirectory": "",
+                "logFileName": "",
+                "crmConnectionTimeout": "120"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
+              "version": "12.*",
+              "name": "Import Solution XXXProcesses_managed",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXUatFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXProcesses_managed.zip",
+                "publishWorkflows": "false",
+                "overwriteUnmanagedCustomizations": "true",
+                "skipProductUpdateDependencies": "false",
+                "convertToManaged": "true",
+                "holdingSolution": "false",
+                "override": "true",
+                "useAsyncMode": "true",
+                "asyncWaitTimeout": "1200",
+                "logsDirectory": "",
+                "logFileName": "",
+                "crmConnectionTimeout": "120"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
+              "version": "12.*",
+              "name": "Import Solution XXXSecurityRoles_managed",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXUatFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXSecurityRoles_managed.zip",
+                "publishWorkflows": "false",
+                "overwriteUnmanagedCustomizations": "true",
+                "skipProductUpdateDependencies": "false",
+                "convertToManaged": "true",
+                "holdingSolution": "false",
+                "override": "true",
+                "useAsyncMode": "true",
+                "asyncWaitTimeout": "1200",
+                "logsDirectory": "",
+                "logFileName": "",
+                "crmConnectionTimeout": "120"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
+              "version": "12.*",
+              "name": "Import Solution XXXModelDrivenApps_managed",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXUatFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXModelDrivenApps_managed.zip",
+                "publishWorkflows": "false",
+                "overwriteUnmanagedCustomizations": "true",
+                "skipProductUpdateDependencies": "false",
+                "convertToManaged": "true",
+                "holdingSolution": "false",
+                "override": "true",
+                "useAsyncMode": "true",
+                "asyncWaitTimeout": "1200",
+                "logsDirectory": "",
+                "logFileName": "",
+                "crmConnectionTimeout": "120"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "f64d3db3-f19a-41dd-bdb8-f8f0e60a4bb1",
+              "version": "12.*",
+              "name": "Publish Customizations",
+              "refName": "",
+              "enabled": false,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "crmConnectionString": "$(XXXUatFS)",
+                "crmConnectionTimeout": "1200"
+              }
+            }
+          ]
+        }
+      ],
+      "environmentOptions": {
+        "emailNotificationType": "OnlyOnFailure",
+        "emailRecipients": "release.environment.owner;release.creator",
+        "skipArtifactsDownload": false,
+        "timeoutInMinutes": 0,
+        "enableAccessToken": false,
+        "publishDeploymentStatus": true,
+        "badgeEnabled": false,
+        "autoLinkWorkItems": false,
+        "pullRequestDeploymentEnabled": false
+      },
+      "demands": [
+      ],
+      "conditions": [
+      ],
+      "executionPolicy": {
+        "concurrencyCount": 1,
+        "queueDepthCount": 0
+      },
+      "schedules": [
+      ],
+      "currentRelease": {
+        "id": 32,
+        "url": "https://sisn.vsrm.visualstudio.com/324472a5-cd8f-4a47-8983-388532d7e4c5/_apis/Release/releases/32",
+        "_links": {
+        }
+      },
+      "retentionPolicy": {
+        "daysToKeep": 30,
+        "releasesToKeep": 3,
+        "retainBuild": true
+      },
+      "processParameters": {
+      },
+      "properties": {
+        "BoardsEnvironmentType": {
+          "$type": "System.String",
+          "$value": "unmapped"
+        },
+        "LinkBoardsWorkItems": {
+          "$type": "System.String",
+          "$value": "False"
+        }
+      },
+      "preDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": [
+        ]
+      },
+      "postDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": [
+        ]
+      },
+      "environmentTriggers": [
+      ],
+      "badgeUrl": "https://sisn.vsrm.visualstudio.com/_apis/public/Release/badge/324472a5-cd8f-4a47-8983-388532d7e4c5/2/10"
+    }
+  ],
+  "artifacts": [
+    {
+      "sourceId": "324472a5-cd8f-4a47-8983-388532d7e4c5:227",
+      "type": "Build",
+      "alias": "_Build XXX Solutions",
+      "definitionReference": {
+        "artifactSourceDefinitionUrl": {
+          "id": "https://sisn.visualstudio.com/_permalink/_build/index?collectionId=65def062-c912-4a77-a8d5-8cc2b10fff65&projectId=324472a5-cd8f-4a47-8983-388532d7e4c5&definitionId=227",
+          "name": ""
+        },
+        "defaultVersionBranch": {
+          "id": "",
+          "name": ""
+        },
+        "defaultVersionSpecific": {
+          "id": "",
+          "name": ""
+        },
+        "defaultVersionTags": {
+          "id": "",
+          "name": ""
+        },
+        "defaultVersionType": {
+          "id": "latestType",
+          "name": "Latest"
+        },
+        "definition": {
+          "id": "227",
+          "name": "Build XXX Solutions"
+        },
+        "definitions": {
+          "id": "",
+          "name": ""
+        },
+        "IsMultiDefinitionType": {
+          "id": "False",
+          "name": "False"
+        },
+        "project": {
+          "id": "324472a5-cd8f-4a47-8983-388532d7e4c5",
+          "name": "XXX"
+        },
+        "repository": {
+          "id": "",
+          "name": ""
+        }
+      },
+      "isPrimary": true,
+      "isRetained": false
+    }
+  ],
+  "triggers": [
+    {
+      "artifactAlias": "_Build XXX Solutions",
+      "triggerConditions": [
+      ],
+      "triggerType": 1
+    }
+  ],
+  "releaseNameFormat": "Release-$(rev:r)",
+  "tags": [
+  ],
+  "properties": {
+    "DefinitionCreationSource": {
+      "$type": "System.String",
+      "$value": "ReleaseNew"
+    },
+    "IntegrateBoardsWorkItems": {
+      "$type": "System.String",
+      "$value": "False"
+    },
+    "IntegrateJiraWorkItems": {
+      "$type": "System.String",
+      "$value": "false"
+    }
+  },
+  "id": 2,
+  "name": "Release XXX Solutions",
+  "path": "\\CE Releases",
+  "projectReference": null,
+  "url": "https://sisn.vsrm.visualstudio.com/324472a5-cd8f-4a47-8983-388532d7e4c5/_apis/Release/definitions/2",
+  "_links": {
+    "self": {
+      "href": "https://sisn.vsrm.visualstudio.com/324472a5-cd8f-4a47-8983-388532d7e4c5/_apis/Release/definitions/2"
+    },
+    "web": {
+      "href": "https://sisn.visualstudio.com/324472a5-cd8f-4a47-8983-388532d7e4c5/_release?definitionId=2"
+    }
+  }
+}
