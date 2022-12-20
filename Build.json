@@ -1,0 +1,769 @@
+{
+  "options": [
+    {
+      "enabled": false,
+      "definition": {
+        "id": "5d58cc01-7c75-450c-be18-a388ddb129ec"
+      },
+      "inputs": {
+        "branchFilters": "[\"+refs/heads/*\"]",
+        "additionalFields": "{}"
+      }
+    },
+    {
+      "enabled": false,
+      "definition": {
+        "id": "a9db38f9-9fdc-478c-b0f9-464221e58316"
+      },
+      "inputs": {
+        "workItemType": "Bug",
+        "assignToRequestor": "true",
+        "additionalFields": "{}"
+      }
+    }
+  ],
+  "variables": {
+    "Commit detail": {
+      "value": "",
+      "allowOverride": true
+    },
+    "Committer Email Address": {
+      "value": "",
+      "allowOverride": true
+    },
+    "Committer Name": {
+      "value": "",
+      "allowOverride": true
+    },
+    "system.debug": {
+      "value": "false",
+      "allowOverride": true
+    }
+  },
+  "variableGroups": [
+    {
+      "variables": {
+        "XXXCrpFS": {
+          "value": "AuthType=ClientSecret;url=https://{CRP_ORG}.crm.dynamics.com;ClientId={YOUR_CLIENT_ID};ClientSecret={YOUR_CLIENT_SECRET}"
+        },
+        "XXXDevFS": {
+          "value": "AuthType=ClientSecret;url=https://{DEV_ORG}.crm.dynamics.com;ClientId={YOUR_CLIENT_ID};ClientSecret={YOUR_CLIENT_SECRET}"
+        },
+        "XXXGoldFS": {
+          "value": "AuthType=ClientSecret;url=https://{GOLD_ORG}.crm.dynamics.com;ClientId={YOUR_CLIENT_ID};ClientSecret={YOUR_CLIENT_SECRET}"
+        },
+        "XXXProdFS": {
+          "value": "AuthType=ClientSecret;url=https://{PROD_ORG}.crm.dynamics.com;ClientId={YOUR_CLIENT_ID};ClientSecret={YOUR_CLIENT_SECRET}"
+        },
+        "XXXUatFS": {
+          "value": "AuthType=ClientSecret;url=https://{UAT_ORG}.crm.dynamics.com;ClientId={YOUR_CLIENT_ID};ClientSecret={YOUR_CLIENT_SECRET}"
+        },
+        "XXXUnitTestFS": {
+          "value": "AuthType=ClientSecret;url=https://{UNITTEST_ORG}.crm.dynamics.com;ClientId={YOUR_CLIENT_ID};ClientSecret={YOUR_CLIENT_SECRET}"
+        }
+      },
+      "type": "Vsts",
+      "name": "CEFS Variables",
+      "description": "",
+      "id": 3
+    }
+  ],
+  "properties": {
+  },
+  "tags": [
+  ],
+  "_links": {
+    "self": {
+      "href": "https://sisn.visualstudio.com/324472a5-cd8f-4a47-8983-388532d7e4c5/_apis/build/Definitions/227?revision=16"
+    },
+    "web": {
+      "href": "https://sisn.visualstudio.com/324472a5-cd8f-4a47-8983-388532d7e4c5/_build/definition?definitionId=227"
+    },
+    "editor": {
+      "href": "https://sisn.visualstudio.com/324472a5-cd8f-4a47-8983-388532d7e4c5/_build/designer?id=227&_a=edit-build-definition"
+    },
+    "badge": {
+      "href": "https://sisn.visualstudio.com/324472a5-cd8f-4a47-8983-388532d7e4c5/_apis/build/status/227"
+    }
+  },
+  "comment": "XXXPCFControls is added to the steps",
+  "jobAuthorizationScope": 1,
+  "jobTimeoutInMinutes": 60,
+  "jobCancelTimeoutInMinutes": 5,
+  "process": {
+    "phases": [
+      {
+        "steps": [
+          {
+            "environment": {
+            },
+            "enabled": true,
+            "continueOnError": false,
+            "alwaysRun": false,
+            "displayName": "Power DevOps Tool Installer",
+            "timeoutInMinutes": 0,
+            "retryCountOnTaskFailure": 0,
+            "condition": "succeeded()",
+            "task": {
+              "id": "04ad1c72-5e49-4686-8a3a-dda6948b0fcd",
+              "versionSpec": "12.*",
+              "definitionType": "task"
+            },
+            "inputs": {
+              "nugetFeed": "official",
+              "nugetSource": "https://api.nuget.org/v3/index.json",
+              "nugetUsername": "",
+              "nugetPassword": "",
+              "nugetUseProxy": "true",
+              "psFeed": "official",
+              "psSource": "https://www.powershellgallery.com/api/v2",
+              "psUsername": "",
+              "psPassword": "",
+              "psUseProxy": "true",
+              "coreToolsVersion": "",
+              "crmConnectorVersion": "",
+              "packageDeploymentVersion": "",
+              "onlineAPIVersion": "",
+              "checkerVersion": "",
+              "configMigrationVersion": "",
+              "powerAppsAdminVersion": "",
+              "powerAppsVersion": "",
+              "powerAppsCLIVersion": "",
+              "msalPSVersion": "",
+              "mgUsersVersion": "",
+              "mgGroupsVersion": ""
+            }
+          },
+          {
+            "environment": {
+            },
+            "enabled": true,
+            "continueOnError": false,
+            "alwaysRun": false,
+            "displayName": "Ping Environment",
+            "timeoutInMinutes": 0,
+            "retryCountOnTaskFailure": 0,
+            "condition": "succeeded()",
+            "task": {
+              "id": "d8587a60-cd25-11e6-a324-f3fd298c325e",
+              "versionSpec": "12.*",
+              "definitionType": "task"
+            },
+            "inputs": {
+              "crmConnectionString": "$(XXXDevFS)"
+            }
+          },
+          {
+            "environment": {
+            },
+            "enabled": true,
+            "continueOnError": false,
+            "alwaysRun": false,
+            "displayName": "Set Version for XXXPCFControls",
+            "timeoutInMinutes": 0,
+            "retryCountOnTaskFailure": 0,
+            "condition": "succeeded()",
+            "task": {
+              "id": "1cacdeec-c8dd-4091-a522-5a8fbf49c851",
+              "versionSpec": "12.*",
+              "definitionType": "task"
+            },
+            "inputs": {
+              "target": "crm",
+              "crmConnectionString": "$(XXXDevFS)",
+              "solutionName": "XXXPCFControls",
+              "unpackedFilesFolder": "",
+              "versionNumber": "1.0.0.$(Build.BuildNumber)"
+            }
+          },
+          {
+            "environment": {
+            },
+            "enabled": true,
+            "continueOnError": false,
+            "alwaysRun": false,
+            "displayName": "Set Version for XXXCustomizations",
+            "timeoutInMinutes": 0,
+            "retryCountOnTaskFailure": 0,
+            "condition": "succeeded()",
+            "task": {
+              "id": "1cacdeec-c8dd-4091-a522-5a8fbf49c851",
+              "versionSpec": "12.*",
+              "definitionType": "task"
+            },
+            "inputs": {
+              "target": "crm",
+              "crmConnectionString": "$(XXXDevFS)",
+              "solutionName": "XXXCustomizations",
+              "unpackedFilesFolder": "",
+              "versionNumber": "1.0.0.$(Build.BuildNumber)"
+            }
+          },
+          {
+            "environment": {
+            },
+            "enabled": true,
+            "continueOnError": false,
+            "alwaysRun": false,
+            "displayName": "Set Version XXXProcesses",
+            "timeoutInMinutes": 0,
+            "retryCountOnTaskFailure": 0,
+            "condition": "succeeded()",
+            "task": {
+              "id": "1cacdeec-c8dd-4091-a522-5a8fbf49c851",
+              "versionSpec": "12.*",
+              "definitionType": "task"
+            },
+            "inputs": {
+              "target": "crm",
+              "crmConnectionString": "$(XXXDevFS)",
+              "solutionName": "XXXProcesses",
+              "unpackedFilesFolder": "",
+              "versionNumber": "1.0.0.$(Build.BuildNumber)"
+            }
+          },
+          {
+            "environment": {
+            },
+            "enabled": true,
+            "continueOnError": false,
+            "alwaysRun": false,
+            "displayName": "Set Version XXXModelDrivenApps",
+            "timeoutInMinutes": 0,
+            "retryCountOnTaskFailure": 0,
+            "condition": "succeeded()",
+            "task": {
+              "id": "1cacdeec-c8dd-4091-a522-5a8fbf49c851",
+              "versionSpec": "12.*",
+              "definitionType": "task"
+            },
+            "inputs": {
+              "target": "crm",
+              "crmConnectionString": "$(XXXDevFS)",
+              "solutionName": "XXXModelDrivenApps",
+              "unpackedFilesFolder": "",
+              "versionNumber": "1.0.0.$(Build.BuildNumber)"
+            }
+          },
+          {
+            "environment": {
+            },
+            "enabled": true,
+            "continueOnError": false,
+            "alwaysRun": false,
+            "displayName": "Set Version XXXSecurityRoles",
+            "timeoutInMinutes": 0,
+            "retryCountOnTaskFailure": 0,
+            "condition": "succeeded()",
+            "task": {
+              "id": "1cacdeec-c8dd-4091-a522-5a8fbf49c851",
+              "versionSpec": "12.*",
+              "definitionType": "task"
+            },
+            "inputs": {
+              "target": "crm",
+              "crmConnectionString": "$(XXXDevFS)",
+              "solutionName": "XXXSecurityRoles",
+              "unpackedFilesFolder": "",
+              "versionNumber": "1.0.0.$(Build.BuildNumber)"
+            }
+          },
+          {
+            "environment": {
+            },
+            "enabled": true,
+            "continueOnError": false,
+            "alwaysRun": false,
+            "displayName": "Export Solution: XXXPCFControls",
+            "timeoutInMinutes": 0,
+            "retryCountOnTaskFailure": 0,
+            "condition": "succeeded()",
+            "task": {
+              "id": "015e2e58-9c77-4cbc-a9c1-a28158165365",
+              "versionSpec": "12.*",
+              "definitionType": "task"
+            },
+            "inputs": {
+              "crmConnectionString": "$(XXXDevFS)",
+              "solutionName": "XXXPCFControls",
+              "exportManaged": "true",
+              "exportUnmanaged": "true",
+              "targetVersion": "",
+              "includeVersionInSolutionFile": "false",
+              "outputPath": "$(build.binariesdirectory)",
+              "crmConnectionTimeout": "240",
+              "useAsyncMode": "false",
+              "asyncWaitTimeout": "900",
+              "exportAutoNumberingSettings": "false",
+              "exportCalendarSettings": "false",
+              "exportCustomizationSettings": "false",
+              "exportEmailTrackingSettings": "false",
+              "exportExternalApplications": "false",
+              "exportGeneralSettings": "false",
+              "exportIsvConfig": "false",
+              "exportMarketingSettings": "false",
+              "exportOutlookSynchronizationSettings": "false",
+              "exportRelationshipRoles": "false",
+              "exportSales": "false"
+            }
+          },
+          {
+            "environment": {
+            },
+            "enabled": true,
+            "continueOnError": false,
+            "alwaysRun": false,
+            "displayName": "Export Solution: XXXCustomizations",
+            "timeoutInMinutes": 0,
+            "retryCountOnTaskFailure": 0,
+            "condition": "succeeded()",
+            "task": {
+              "id": "015e2e58-9c77-4cbc-a9c1-a28158165365",
+              "versionSpec": "12.*",
+              "definitionType": "task"
+            },
+            "inputs": {
+              "crmConnectionString": "$(XXXDevFS)",
+              "solutionName": "XXXCustomizations",
+              "exportManaged": "true",
+              "exportUnmanaged": "true",
+              "targetVersion": "",
+              "includeVersionInSolutionFile": "false",
+              "outputPath": "$(build.binariesdirectory)",
+              "crmConnectionTimeout": "240",
+              "useAsyncMode": "false",
+              "asyncWaitTimeout": "900",
+              "exportAutoNumberingSettings": "false",
+              "exportCalendarSettings": "false",
+              "exportCustomizationSettings": "false",
+              "exportEmailTrackingSettings": "false",
+              "exportExternalApplications": "false",
+              "exportGeneralSettings": "false",
+              "exportIsvConfig": "false",
+              "exportMarketingSettings": "false",
+              "exportOutlookSynchronizationSettings": "false",
+              "exportRelationshipRoles": "false",
+              "exportSales": "false"
+            }
+          },
+          {
+            "environment": {
+            },
+            "enabled": true,
+            "continueOnError": false,
+            "alwaysRun": false,
+            "displayName": "Export Solution: XXXProcesses",
+            "timeoutInMinutes": 0,
+            "retryCountOnTaskFailure": 0,
+            "condition": "succeeded()",
+            "task": {
+              "id": "015e2e58-9c77-4cbc-a9c1-a28158165365",
+              "versionSpec": "12.*",
+              "definitionType": "task"
+            },
+            "inputs": {
+              "crmConnectionString": "$(XXXDevFS)",
+              "solutionName": "XXXProcesses",
+              "exportManaged": "true",
+              "exportUnmanaged": "true",
+              "targetVersion": "",
+              "includeVersionInSolutionFile": "false",
+              "outputPath": "$(build.binariesdirectory)",
+              "crmConnectionTimeout": "120",
+              "useAsyncMode": "false",
+              "asyncWaitTimeout": "900",
+              "exportAutoNumberingSettings": "false",
+              "exportCalendarSettings": "false",
+              "exportCustomizationSettings": "false",
+              "exportEmailTrackingSettings": "false",
+              "exportExternalApplications": "false",
+              "exportGeneralSettings": "false",
+              "exportIsvConfig": "false",
+              "exportMarketingSettings": "false",
+              "exportOutlookSynchronizationSettings": "false",
+              "exportRelationshipRoles": "false",
+              "exportSales": "false"
+            }
+          },
+          {
+            "environment": {
+            },
+            "enabled": true,
+            "continueOnError": false,
+            "alwaysRun": false,
+            "displayName": "Export Solution: XXXModelDrivenApps",
+            "timeoutInMinutes": 0,
+            "retryCountOnTaskFailure": 0,
+            "condition": "succeeded()",
+            "task": {
+              "id": "015e2e58-9c77-4cbc-a9c1-a28158165365",
+              "versionSpec": "12.*",
+              "definitionType": "task"
+            },
+            "inputs": {
+              "crmConnectionString": "$(XXXDevFS)",
+              "solutionName": "XXXModelDrivenApps",
+              "exportManaged": "true",
+              "exportUnmanaged": "true",
+              "targetVersion": "",
+              "includeVersionInSolutionFile": "false",
+              "outputPath": "$(build.binariesdirectory)",
+              "crmConnectionTimeout": "120",
+              "useAsyncMode": "false",
+              "asyncWaitTimeout": "900",
+              "exportAutoNumberingSettings": "false",
+              "exportCalendarSettings": "false",
+              "exportCustomizationSettings": "false",
+              "exportEmailTrackingSettings": "false",
+              "exportExternalApplications": "false",
+              "exportGeneralSettings": "false",
+              "exportIsvConfig": "false",
+              "exportMarketingSettings": "false",
+              "exportOutlookSynchronizationSettings": "false",
+              "exportRelationshipRoles": "false",
+              "exportSales": "false"
+            }
+          },
+          {
+            "environment": {
+            },
+            "enabled": true,
+            "continueOnError": false,
+            "alwaysRun": false,
+            "displayName": "Export Solution: XXXSecurityRoles",
+            "timeoutInMinutes": 0,
+            "retryCountOnTaskFailure": 0,
+            "condition": "succeeded()",
+            "task": {
+              "id": "015e2e58-9c77-4cbc-a9c1-a28158165365",
+              "versionSpec": "12.*",
+              "definitionType": "task"
+            },
+            "inputs": {
+              "crmConnectionString": "$(XXXDevFS)",
+              "solutionName": "XXXSecurityRoles",
+              "exportManaged": "true",
+              "exportUnmanaged": "true",
+              "targetVersion": "",
+              "includeVersionInSolutionFile": "false",
+              "outputPath": "$(build.binariesdirectory)",
+              "crmConnectionTimeout": "120",
+              "useAsyncMode": "false",
+              "asyncWaitTimeout": "900",
+              "exportAutoNumberingSettings": "false",
+              "exportCalendarSettings": "false",
+              "exportCustomizationSettings": "false",
+              "exportEmailTrackingSettings": "false",
+              "exportExternalApplications": "false",
+              "exportGeneralSettings": "false",
+              "exportIsvConfig": "false",
+              "exportMarketingSettings": "false",
+              "exportOutlookSynchronizationSettings": "false",
+              "exportRelationshipRoles": "false",
+              "exportSales": "false"
+            }
+          },
+          {
+            "environment": {
+            },
+            "enabled": false,
+            "continueOnError": false,
+            "alwaysRun": false,
+            "displayName": "Export Solution: customizations Unmanaged",
+            "timeoutInMinutes": 0,
+            "retryCountOnTaskFailure": 0,
+            "condition": "succeeded()",
+            "task": {
+              "id": "015e2e58-9c77-4cbc-a9c1-a28158165365",
+              "versionSpec": "12.*",
+              "definitionType": "task"
+            },
+            "inputs": {
+              "crmConnectionString": "$(XXXDevFS)",
+              "solutionName": "XXXCustomizations",
+              "exportManaged": "true",
+              "exportUnmanaged": "true",
+              "targetVersion": "",
+              "includeVersionInSolutionFile": "false",
+              "outputPath": "$(build.binariesdirectory)",
+              "crmConnectionTimeout": "120",
+              "useAsyncMode": "false",
+              "asyncWaitTimeout": "900",
+              "exportAutoNumberingSettings": "false",
+              "exportCalendarSettings": "false",
+              "exportCustomizationSettings": "false",
+              "exportEmailTrackingSettings": "false",
+              "exportExternalApplications": "false",
+              "exportGeneralSettings": "false",
+              "exportIsvConfig": "false",
+              "exportMarketingSettings": "false",
+              "exportOutlookSynchronizationSettings": "false",
+              "exportRelationshipRoles": "false",
+              "exportSales": "false"
+            }
+          },
+          {
+            "environment": {
+            },
+            "enabled": true,
+            "continueOnError": false,
+            "alwaysRun": false,
+            "displayName": "Extract Solution XXXPCFControls",
+            "timeoutInMinutes": 0,
+            "retryCountOnTaskFailure": 0,
+            "condition": "succeeded()",
+            "task": {
+              "id": "48834e5a-a932-49af-a7fd-a805b5e1cfb5",
+              "versionSpec": "12.*",
+              "definitionType": "task"
+            },
+            "inputs": {
+              "unpackedFilesFolder": "Solutions/XXXPCFControls",
+              "mappingFile": "",
+              "packageType": "Unmanaged",
+              "solutionFile": "$(build.binariesdirectory)\\XXXPCFControls.zip",
+              "sourceLoc": "",
+              "localize": "false",
+              "treatUnpackWarningsAsErrors": "false"
+            }
+          },
+          {
+            "environment": {
+            },
+            "enabled": true,
+            "continueOnError": false,
+            "alwaysRun": false,
+            "displayName": "Extract Solution XXXCustomizations",
+            "timeoutInMinutes": 0,
+            "retryCountOnTaskFailure": 0,
+            "condition": "succeeded()",
+            "task": {
+              "id": "48834e5a-a932-49af-a7fd-a805b5e1cfb5",
+              "versionSpec": "12.*",
+              "definitionType": "task"
+            },
+            "inputs": {
+              "unpackedFilesFolder": "Solutions/XXXCustomizations",
+              "mappingFile": "",
+              "packageType": "Unmanaged",
+              "solutionFile": "$(build.binariesdirectory)\\XXXCustomizations.zip",
+              "sourceLoc": "",
+              "localize": "false",
+              "treatUnpackWarningsAsErrors": "false"
+            }
+          },
+          {
+            "environment": {
+            },
+            "enabled": true,
+            "continueOnError": false,
+            "alwaysRun": false,
+            "displayName": "Extract Solution XXXProcesses",
+            "timeoutInMinutes": 0,
+            "retryCountOnTaskFailure": 0,
+            "condition": "succeeded()",
+            "task": {
+              "id": "48834e5a-a932-49af-a7fd-a805b5e1cfb5",
+              "versionSpec": "12.*",
+              "definitionType": "task"
+            },
+            "inputs": {
+              "unpackedFilesFolder": "Solutions/XXXProcesses",
+              "mappingFile": "",
+              "packageType": "Unmanaged",
+              "solutionFile": "$(build.binariesdirectory)\\XXXProcesses.zip",
+              "sourceLoc": "",
+              "localize": "false",
+              "treatUnpackWarningsAsErrors": "false"
+            }
+          },
+          {
+            "environment": {
+            },
+            "enabled": true,
+            "continueOnError": false,
+            "alwaysRun": false,
+            "displayName": "Extract Solution XXXSecurityRoles",
+            "timeoutInMinutes": 0,
+            "retryCountOnTaskFailure": 0,
+            "condition": "succeeded()",
+            "task": {
+              "id": "48834e5a-a932-49af-a7fd-a805b5e1cfb5",
+              "versionSpec": "12.*",
+              "definitionType": "task"
+            },
+            "inputs": {
+              "unpackedFilesFolder": "Solutions/XXXSecurityRoles",
+              "mappingFile": "",
+              "packageType": "Unmanaged",
+              "solutionFile": "$(build.binariesdirectory)\\XXXSecurityRoles.zip",
+              "sourceLoc": "",
+              "localize": "false",
+              "treatUnpackWarningsAsErrors": "false"
+            }
+          },
+          {
+            "environment": {
+            },
+            "enabled": true,
+            "continueOnError": false,
+            "alwaysRun": false,
+            "displayName": "Extract Solution XXXModelDrivenApps",
+            "timeoutInMinutes": 0,
+            "retryCountOnTaskFailure": 0,
+            "condition": "succeeded()",
+            "task": {
+              "id": "48834e5a-a932-49af-a7fd-a805b5e1cfb5",
+              "versionSpec": "12.*",
+              "definitionType": "task"
+            },
+            "inputs": {
+              "unpackedFilesFolder": "Solutions/XXXModelDrivenApps",
+              "mappingFile": "",
+              "packageType": "Unmanaged",
+              "solutionFile": "$(build.binariesdirectory)\\XXXModelDrivenApps.zip",
+              "sourceLoc": "",
+              "localize": "false",
+              "treatUnpackWarningsAsErrors": "false"
+            }
+          },
+          {
+            "environment": {
+            },
+            "enabled": true,
+            "continueOnError": false,
+            "alwaysRun": false,
+            "displayName": "Command Line Script",
+            "timeoutInMinutes": 0,
+            "retryCountOnTaskFailure": 0,
+            "condition": "succeeded()",
+            "task": {
+              "id": "d9bafed4-0b18-4f58-968d-86655b4d2ce9",
+              "versionSpec": "2.*",
+              "definitionType": "task"
+            },
+            "inputs": {
+              "script": "git config --global user.email \"XXX Build\"\ngit config --global user.name \"XXX Build\"\ngit checkout -b main\ngit add -A\ngit commit -m \"deployment $(Build.BuildNumber)\"\ngit push --set-upstream origin main ",
+              "workingDirectory": "",
+              "failOnStderr": "false"
+            }
+          },
+          {
+            "environment": {
+            },
+            "enabled": true,
+            "continueOnError": false,
+            "alwaysRun": false,
+            "displayName": "Publish Artifact: drop",
+            "timeoutInMinutes": 0,
+            "retryCountOnTaskFailure": 0,
+            "condition": "succeeded()",
+            "task": {
+              "id": "2ff763a7-ce83-4e1f-bc89-0ae63477cebe",
+              "versionSpec": "1.*",
+              "definitionType": "task"
+            },
+            "inputs": {
+              "PathtoPublish": "$(Build.binariesdirectory)",
+              "ArtifactName": "drop",
+              "ArtifactType": "Container",
+              "TargetPath": "",
+              "Parallel": "false",
+              "ParallelCount": "8",
+              "FileCopyOptions": "",
+              "StoreAsTar": "false"
+            }
+          }
+        ],
+        "name": "Agent job 1",
+        "refName": "Job_1",
+        "condition": "succeeded()",
+        "target": {
+          "executionOptions": {
+            "type": 0
+          },
+          "allowScriptsAuthAccessOption": true,
+          "type": 1
+        },
+        "jobAuthorizationScope": 1
+      }
+    ],
+    "target": {
+      "agentSpecification": {
+        "identifier": "windows-2022"
+      }
+    },
+    "type": 1
+  },
+  "repository": {
+    "properties": {
+      "cleanOptions": "0",
+      "labelSources": "0",
+      "labelSourcesFormat": "$(build.buildNumber)",
+      "reportBuildStatus": "true",
+      "gitLfsSupport": "false",
+      "skipSyncSource": "false",
+      "checkoutNestedSubmodules": "false",
+      "fetchDepth": "0"
+    },
+    "id": "cb11d7fb-ba11-4cb3-b7e2-0892c3c86cb8",
+    "type": "TfsGit",
+    "name": "XXX-FS",
+    "url": "https://sisn.visualstudio.com/XXX/_git/XXX-FS",
+    "defaultBranch": "refs/heads/main",
+    "clean": "false",
+    "checkoutSubmodules": false
+  },
+  "processParameters": {
+  },
+  "quality": 1,
+  "authoredBy": {
+    "displayName": "Murat Kayhan",
+    "url": "https://spsprodeus23.vssps.visualstudio.com/A7cdf2f2a-a0fa-4a7b-b924-c90a07228fd4/_apis/Identities/eba5496c-4719-6352-9ed2-8f44bc5623ae",
+    "_links": {
+      "avatar": {
+        "href": "https://sisn.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.ZWJhNTQ5NmMtNDcxOS03MzUyLTllZDItOGY0NGJjNTYyM2Fl"
+      }
+    },
+    "id": "eba5496c-4719-6352-9ed2-8f44bc5623ae",
+    "uniqueName": "mkayhan@sisn.com",
+    "imageUrl": "https://sisn.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.ZWJhNTQ5NmMtNDcxOS03MzUyLTllZDItOGY0NGJjNTYyM2Fl",
+    "descriptor": "aad.ZWJhNTQ5NmMtNDcxOS03MzUyLTllZDItOGY0NGJjNTYyM2Fl"
+  },
+  "drafts": [
+  ],
+  "queue": {
+    "_links": {
+      "self": {
+        "href": "https://sisn.visualstudio.com/_apis/build/Queues/1451"
+      }
+    },
+    "id": 1451,
+    "name": "Azure Pipelines",
+    "url": "https://sisn.visualstudio.com/_apis/build/Queues/1451",
+    "pool": {
+      "id": 14,
+      "name": "Azure Pipelines",
+      "isHosted": true
+    }
+  },
+  "id": 227,
+  "name": "Build XXX Solutions",
+  "url": "https://sisn.visualstudio.com/324472a5-cd8f-4a47-8983-388532d7e4c5/_apis/build/Definitions/227?revision=16",
+  "uri": "vstfs:///Build/Definition/227",
+  "path": "\\CE Builds",
+  "type": 2,
+  "queueStatus": 0,
+  "revision": 16,
+  "createdDate": "2022-10-19T14:05:03.713Z",
+  "project": {
+    "id": "324472a5-cd8f-4a47-8983-388532d7e4c5",
+    "name": "XXX",
+    "description": "XXX / Heico D365 Implementation \n\n",
+    "url": "https://sisn.visualstudio.com/_apis/projects/324472a5-cd8f-4a47-8983-388532d7e4c5",
+    "state": 1,
+    "revision": 515239310,
+    "visibility": 0,
+    "lastUpdateTime": "2022-10-19T17:57:06.423Z"
+  }
+}
