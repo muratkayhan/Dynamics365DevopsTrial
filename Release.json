@@ -213,7 +213,7 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXUnitTestFS)"
+                "crmConnectionString": "$(CBSUnitTestFS)"
               }
             },
             {
@@ -221,7 +221,7 @@
               },
               "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
               "version": "12.*",
-              "name": "Import Solution XXXPCFControls_managed",
+              "name": "Import Solution CBSPCFControls_managed",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -233,8 +233,8 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXUnitTestFS)",
-                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXPCFControls_managed.zip",
+                "crmConnectionString": "$(CBSUnitTestFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build CBS Solutions/drop/CBSPCFControls_managed.zip",
                 "publishWorkflows": "false",
                 "overwriteUnmanagedCustomizations": "true",
                 "skipProductUpdateDependencies": "false",
@@ -242,10 +242,10 @@
                 "holdingSolution": "true",
                 "override": "true",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "logsDirectory": "",
                 "logFileName": "",
-                "crmConnectionTimeout": "120"
+                "crmConnectionTimeout": "6000"
               }
             },
             {
@@ -253,7 +253,7 @@
               },
               "taskId": "f08caccb-e6cd-4857-9e69-410c8adb7eb8",
               "version": "12.*",
-              "name": "Apply Solution: XXXPCFControls",
+              "name": "Apply Solution: CBSPCFControls",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -265,10 +265,10 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXUnitTestFS)",
-                "solutionName": "XXXPCFControls",
+                "crmConnectionString": "$(CBSUnitTestFS)",
+                "solutionName": "CBSPCFControls",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "crmConnectionTimeout": "1200"
               }
             },
@@ -277,7 +277,7 @@
               },
               "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
               "version": "12.*",
-              "name": "Import Solution XXXCustomizations_managed",
+              "name": "Import Solution CBSCustomizations_managed",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -289,8 +289,8 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXUnitTestFS)",
-                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXCustomizations_managed.zip",
+                "crmConnectionString": "$(CBSUnitTestFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build CBS Solutions/drop/CBSCustomizations_managed.zip",
                 "publishWorkflows": "false",
                 "overwriteUnmanagedCustomizations": "true",
                 "skipProductUpdateDependencies": "false",
@@ -298,10 +298,10 @@
                 "holdingSolution": "true",
                 "override": "true",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "logsDirectory": "",
                 "logFileName": "",
-                "crmConnectionTimeout": "120"
+                "crmConnectionTimeout": "6000"
               }
             },
             {
@@ -309,7 +309,7 @@
               },
               "taskId": "f08caccb-e6cd-4857-9e69-410c8adb7eb8",
               "version": "12.*",
-              "name": "Apply Solution: XXXCustomizations",
+              "name": "Apply Solution: CBSCustomizations",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -321,10 +321,10 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXUnitTestFS)",
-                "solutionName": "XXXCustomizations",
+                "crmConnectionString": "$(CBSUnitTestFS)",
+                "solutionName": "CBSCustomizations",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "crmConnectionTimeout": "1200"
               }
             },
@@ -333,7 +333,7 @@
               },
               "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
               "version": "12.*",
-              "name": "Import Solution XXXProcesses_managed",
+              "name": "Import Solution CBSProcesses_managed",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -345,8 +345,8 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXUnitTestFS)",
-                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXProcesses_managed.zip",
+                "crmConnectionString": "$(CBSUnitTestFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build CBS Solutions/drop/CBSProcesses_managed.zip",
                 "publishWorkflows": "false",
                 "overwriteUnmanagedCustomizations": "true",
                 "skipProductUpdateDependencies": "false",
@@ -354,10 +354,10 @@
                 "holdingSolution": "true",
                 "override": "true",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "logsDirectory": "",
                 "logFileName": "",
-                "crmConnectionTimeout": "120"
+                "crmConnectionTimeout": "6000"
               }
             },
             {
@@ -365,7 +365,7 @@
               },
               "taskId": "f08caccb-e6cd-4857-9e69-410c8adb7eb8",
               "version": "12.*",
-              "name": "Apply Solution: XXXProcesses",
+              "name": "Apply Solution: CBSProcesses",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -377,10 +377,10 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXUnitTestFS)",
-                "solutionName": "XXXProcesses",
+                "crmConnectionString": "$(CBSUnitTestFS)",
+                "solutionName": "CBSProcesses",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "crmConnectionTimeout": "1200"
               }
             },
@@ -389,7 +389,7 @@
               },
               "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
               "version": "12.*",
-              "name": "Import Solution XXXSecurityRoles_managed",
+              "name": "Import Solution CBSSecurityRoles_managed",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -401,8 +401,8 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXUnitTestFS)",
-                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXSecurityRoles_managed.zip",
+                "crmConnectionString": "$(CBSUnitTestFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build CBS Solutions/drop/CBSSecurityRoles_managed.zip",
                 "publishWorkflows": "false",
                 "overwriteUnmanagedCustomizations": "true",
                 "skipProductUpdateDependencies": "false",
@@ -410,10 +410,10 @@
                 "holdingSolution": "true",
                 "override": "true",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "logsDirectory": "",
                 "logFileName": "",
-                "crmConnectionTimeout": "120"
+                "crmConnectionTimeout": "6000"
               }
             },
             {
@@ -421,7 +421,7 @@
               },
               "taskId": "f08caccb-e6cd-4857-9e69-410c8adb7eb8",
               "version": "12.*",
-              "name": "Apply Solution: XXXSecurityRoles",
+              "name": "Apply Solution: CBSSecurityRoles",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -433,10 +433,10 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXUnitTestFS)",
-                "solutionName": "XXXSecurityRoles",
+                "crmConnectionString": "$(CBSUnitTestFS)",
+                "solutionName": "CBSSecurityRoles",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "crmConnectionTimeout": "1200"
               }
             },
@@ -445,7 +445,7 @@
               },
               "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
               "version": "12.*",
-              "name": "Import Solution XXXModelDrivenApps_managed",
+              "name": "Import Solution CBSModelDrivenApps_managed",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -457,8 +457,8 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXUnitTestFS)",
-                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXModelDrivenApps_managed.zip",
+                "crmConnectionString": "$(CBSUnitTestFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build CBS Solutions/drop/CBSModelDrivenApps_managed.zip",
                 "publishWorkflows": "false",
                 "overwriteUnmanagedCustomizations": "true",
                 "skipProductUpdateDependencies": "false",
@@ -466,10 +466,10 @@
                 "holdingSolution": "true",
                 "override": "true",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "logsDirectory": "",
                 "logFileName": "",
-                "crmConnectionTimeout": "120"
+                "crmConnectionTimeout": "6000"
               }
             },
             {
@@ -477,7 +477,7 @@
               },
               "taskId": "f08caccb-e6cd-4857-9e69-410c8adb7eb8",
               "version": "12.*",
-              "name": "Apply Solution: XXXModelDrivenApps",
+              "name": "Apply Solution: CBSModelDrivenApps",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -489,10 +489,10 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXUnitTestFS)",
-                "solutionName": "XXXModelDrivenApps",
+                "crmConnectionString": "$(CBSUnitTestFS)",
+                "solutionName": "CBSModelDrivenApps",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "crmConnectionTimeout": "1200"
               }
             },
@@ -513,7 +513,7 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXUatFS)",
+                "crmConnectionString": "$(CBSUatFS)",
                 "crmConnectionTimeout": "1200"
               }
             }
@@ -732,7 +732,7 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXUatFS)"
+                "crmConnectionString": "$(CBSUatFS)"
               }
             },
             {
@@ -740,7 +740,7 @@
               },
               "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
               "version": "12.*",
-              "name": "Import Solution XXXPCFControls_managed",
+              "name": "Import Solution CBSPCFControls_managed",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -752,8 +752,8 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXUatFS)",
-                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXPCFControls_managed.zip",
+                "crmConnectionString": "$(CBSUatFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build CBS Solutions/drop/CBSPCFControls_managed.zip",
                 "publishWorkflows": "false",
                 "overwriteUnmanagedCustomizations": "true",
                 "skipProductUpdateDependencies": "false",
@@ -761,10 +761,10 @@
                 "holdingSolution": "true",
                 "override": "true",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "logsDirectory": "",
                 "logFileName": "",
-                "crmConnectionTimeout": "120"
+                "crmConnectionTimeout": "6000"
               }
             },
             {
@@ -772,7 +772,7 @@
               },
               "taskId": "f08caccb-e6cd-4857-9e69-410c8adb7eb8",
               "version": "12.*",
-              "name": "Apply Solution: XXXPCFControls",
+              "name": "Apply Solution: CBSPCFControls",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -784,10 +784,10 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXUatFS)",
-                "solutionName": "XXXPCFControls",
+                "crmConnectionString": "$(CBSUatFS)",
+                "solutionName": "CBSPCFControls",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "crmConnectionTimeout": "1200"
               }
             },
@@ -796,7 +796,7 @@
               },
               "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
               "version": "12.*",
-              "name": "Import Solution XXXCustomizations_managed",
+              "name": "Import Solution CBSCustomizations_managed",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -808,8 +808,8 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXUatFS)",
-                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXCustomizations_managed.zip",
+                "crmConnectionString": "$(CBSUatFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build CBS Solutions/drop/CBSCustomizations_managed.zip",
                 "publishWorkflows": "false",
                 "overwriteUnmanagedCustomizations": "true",
                 "skipProductUpdateDependencies": "false",
@@ -817,10 +817,10 @@
                 "holdingSolution": "true",
                 "override": "true",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "logsDirectory": "",
                 "logFileName": "",
-                "crmConnectionTimeout": "120"
+                "crmConnectionTimeout": "6000"
               }
             },
             {
@@ -828,7 +828,7 @@
               },
               "taskId": "f08caccb-e6cd-4857-9e69-410c8adb7eb8",
               "version": "12.*",
-              "name": "Apply Solution: XXXCustomizations",
+              "name": "Apply Solution: CBSCustomizations",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -840,10 +840,10 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXUatFS)",
-                "solutionName": "XXXCustomizations",
+                "crmConnectionString": "$(CBSUatFS)",
+                "solutionName": "CBSCustomizations",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "crmConnectionTimeout": "1200"
               }
             },
@@ -852,7 +852,7 @@
               },
               "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
               "version": "12.*",
-              "name": "Import Solution XXXProcesses_managed",
+              "name": "Import Solution CBSProcesses_managed",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -864,8 +864,8 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXUatFS)",
-                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXProcesses_managed.zip",
+                "crmConnectionString": "$(CBSUatFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build CBS Solutions/drop/CBSProcesses_managed.zip",
                 "publishWorkflows": "false",
                 "overwriteUnmanagedCustomizations": "true",
                 "skipProductUpdateDependencies": "false",
@@ -873,10 +873,10 @@
                 "holdingSolution": "true",
                 "override": "true",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "logsDirectory": "",
                 "logFileName": "",
-                "crmConnectionTimeout": "120"
+                "crmConnectionTimeout": "6000"
               }
             },
             {
@@ -884,7 +884,7 @@
               },
               "taskId": "f08caccb-e6cd-4857-9e69-410c8adb7eb8",
               "version": "12.*",
-              "name": "Apply Solution: XXXProcesses",
+              "name": "Apply Solution: CBSProcesses",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -896,10 +896,10 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXUatFS)",
-                "solutionName": "XXXProcesses",
+                "crmConnectionString": "$(CBSUatFS)",
+                "solutionName": "CBSProcesses",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "crmConnectionTimeout": "1200"
               }
             },
@@ -908,7 +908,7 @@
               },
               "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
               "version": "12.*",
-              "name": "Import Solution XXXSecurityRoles_managed",
+              "name": "Import Solution CBSSecurityRoles_managed",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -920,8 +920,8 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXUatFS)",
-                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXSecurityRoles_managed.zip",
+                "crmConnectionString": "$(CBSUatFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build CBS Solutions/drop/CBSSecurityRoles_managed.zip",
                 "publishWorkflows": "false",
                 "overwriteUnmanagedCustomizations": "true",
                 "skipProductUpdateDependencies": "false",
@@ -929,10 +929,10 @@
                 "holdingSolution": "true",
                 "override": "true",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "logsDirectory": "",
                 "logFileName": "",
-                "crmConnectionTimeout": "120"
+                "crmConnectionTimeout": "6000"
               }
             },
             {
@@ -940,7 +940,7 @@
               },
               "taskId": "f08caccb-e6cd-4857-9e69-410c8adb7eb8",
               "version": "12.*",
-              "name": "Apply Solution: XXXSecurityRoles",
+              "name": "Apply Solution: CBSSecurityRoles",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -952,10 +952,10 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXUatFS)",
-                "solutionName": "XXXSecurityRoles",
+                "crmConnectionString": "$(CBSUatFS)",
+                "solutionName": "CBSSecurityRoles",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "crmConnectionTimeout": "1200"
               }
             },
@@ -964,7 +964,7 @@
               },
               "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
               "version": "12.*",
-              "name": "Import Solution XXXModelDrivenApps_managed",
+              "name": "Import Solution CBSModelDrivenApps_managed",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -976,8 +976,8 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXUatFS)",
-                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXModelDrivenApps_managed.zip",
+                "crmConnectionString": "$(CBSUatFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build CBS Solutions/drop/CBSModelDrivenApps_managed.zip",
                 "publishWorkflows": "false",
                 "overwriteUnmanagedCustomizations": "true",
                 "skipProductUpdateDependencies": "false",
@@ -985,10 +985,10 @@
                 "holdingSolution": "true",
                 "override": "true",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "logsDirectory": "",
                 "logFileName": "",
-                "crmConnectionTimeout": "120"
+                "crmConnectionTimeout": "6000"
               }
             },
             {
@@ -996,7 +996,7 @@
               },
               "taskId": "f08caccb-e6cd-4857-9e69-410c8adb7eb8",
               "version": "12.*",
-              "name": "Apply Solution: XXXModelDrivenApps",
+              "name": "Apply Solution: CBSModelDrivenApps",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -1008,10 +1008,10 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXUatFS)",
-                "solutionName": "XXXModelDrivenApps",
+                "crmConnectionString": "$(CBSUatFS)",
+                "solutionName": "CBSModelDrivenApps",
                 "useAsyncMode": "false",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "crmConnectionTimeout": "1200"
               }
             },
@@ -1032,7 +1032,7 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXUatFS)",
+                "crmConnectionString": "$(CBSUatFS)",
                 "crmConnectionTimeout": "1200"
               }
             }
@@ -1246,7 +1246,7 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXCrpFS)"
+                "crmConnectionString": "$(CBSCrpFS)"
               }
             },
             {
@@ -1254,7 +1254,7 @@
               },
               "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
               "version": "12.*",
-              "name": "Import Solution XXXPCFControls_managed",
+              "name": "Import Solution CBSPCFControls_managed",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -1266,8 +1266,8 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXCrpFS)",
-                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXPCFControls_managed.zip",
+                "crmConnectionString": "$(CBSCrpFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build CBS Solutions/drop/CBSPCFControls_managed.zip",
                 "publishWorkflows": "false",
                 "overwriteUnmanagedCustomizations": "true",
                 "skipProductUpdateDependencies": "false",
@@ -1275,10 +1275,10 @@
                 "holdingSolution": "true",
                 "override": "true",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "logsDirectory": "",
                 "logFileName": "",
-                "crmConnectionTimeout": "120"
+                "crmConnectionTimeout": "6000"
               }
             },
             {
@@ -1286,7 +1286,7 @@
               },
               "taskId": "f08caccb-e6cd-4857-9e69-410c8adb7eb8",
               "version": "12.*",
-              "name": "Apply Solution: XXXPCFControls",
+              "name": "Apply Solution: CBSPCFControls",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -1298,10 +1298,10 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXCrpFS)",
-                "solutionName": "XXXPCFControls",
+                "crmConnectionString": "$(CBSCrpFS)",
+                "solutionName": "CBSPCFControls",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "crmConnectionTimeout": "1200"
               }
             },
@@ -1310,7 +1310,7 @@
               },
               "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
               "version": "12.*",
-              "name": "Import Solution XXXCustomizations_managed",
+              "name": "Import Solution CBSCustomizations_managed",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -1322,8 +1322,8 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXCrpFS)",
-                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXCustomizations_managed.zip",
+                "crmConnectionString": "$(CBSCrpFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build CBS Solutions/drop/CBSCustomizations_managed.zip",
                 "publishWorkflows": "false",
                 "overwriteUnmanagedCustomizations": "true",
                 "skipProductUpdateDependencies": "false",
@@ -1331,10 +1331,10 @@
                 "holdingSolution": "true",
                 "override": "true",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "logsDirectory": "",
                 "logFileName": "",
-                "crmConnectionTimeout": "120"
+                "crmConnectionTimeout": "6000"
               }
             },
             {
@@ -1342,7 +1342,7 @@
               },
               "taskId": "f08caccb-e6cd-4857-9e69-410c8adb7eb8",
               "version": "12.*",
-              "name": "Apply Solution: XXXCustomizations",
+              "name": "Apply Solution: CBSCustomizations",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -1354,10 +1354,10 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXCrpFS)",
-                "solutionName": "XXXCustomizations",
+                "crmConnectionString": "$(CBSCrpFS)",
+                "solutionName": "CBSCustomizations",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "crmConnectionTimeout": "1200"
               }
             },
@@ -1366,7 +1366,7 @@
               },
               "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
               "version": "12.*",
-              "name": "Import Solution XXXProcesses_managed",
+              "name": "Import Solution CBSProcesses_managed",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -1378,8 +1378,8 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXCrpFS)",
-                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXProcesses_managed.zip",
+                "crmConnectionString": "$(CBSCrpFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build CBS Solutions/drop/CBSProcesses_managed.zip",
                 "publishWorkflows": "false",
                 "overwriteUnmanagedCustomizations": "true",
                 "skipProductUpdateDependencies": "false",
@@ -1387,10 +1387,10 @@
                 "holdingSolution": "true",
                 "override": "true",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "logsDirectory": "",
                 "logFileName": "",
-                "crmConnectionTimeout": "120"
+                "crmConnectionTimeout": "6000"
               }
             },
             {
@@ -1398,7 +1398,7 @@
               },
               "taskId": "f08caccb-e6cd-4857-9e69-410c8adb7eb8",
               "version": "12.*",
-              "name": "Apply Solution: XXXProcesses",
+              "name": "Apply Solution: CBSProcesses",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -1410,10 +1410,10 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXCrpFS)",
-                "solutionName": "XXXProcesses",
+                "crmConnectionString": "$(CBSCrpFS)",
+                "solutionName": "CBSProcesses",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "crmConnectionTimeout": "1200"
               }
             },
@@ -1422,7 +1422,7 @@
               },
               "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
               "version": "12.*",
-              "name": "Import Solution XXXSecurityRoles_managed",
+              "name": "Import Solution CBSSecurityRoles_managed",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -1434,8 +1434,8 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXCrpFS)",
-                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXSecurityRoles_managed.zip",
+                "crmConnectionString": "$(CBSCrpFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build CBS Solutions/drop/CBSSecurityRoles_managed.zip",
                 "publishWorkflows": "false",
                 "overwriteUnmanagedCustomizations": "true",
                 "skipProductUpdateDependencies": "false",
@@ -1443,10 +1443,10 @@
                 "holdingSolution": "true",
                 "override": "true",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "logsDirectory": "",
                 "logFileName": "",
-                "crmConnectionTimeout": "120"
+                "crmConnectionTimeout": "6000"
               }
             },
             {
@@ -1454,7 +1454,7 @@
               },
               "taskId": "f08caccb-e6cd-4857-9e69-410c8adb7eb8",
               "version": "12.*",
-              "name": "Apply Solution: XXXSecurityRoles",
+              "name": "Apply Solution: CBSSecurityRoles",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -1466,10 +1466,10 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXCrpFS)",
-                "solutionName": "XXXSecurityRoles",
+                "crmConnectionString": "$(CBSCrpFS)",
+                "solutionName": "CBSSecurityRoles",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "crmConnectionTimeout": "1200"
               }
             },
@@ -1478,7 +1478,7 @@
               },
               "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
               "version": "12.*",
-              "name": "Import Solution XXXModelDrivenApps_managed",
+              "name": "Import Solution CBSModelDrivenApps_managed",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -1490,8 +1490,8 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXCrpFS)",
-                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXModelDrivenApps_managed.zip",
+                "crmConnectionString": "$(CBSCrpFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build CBS Solutions/drop/CBSModelDrivenApps_managed.zip",
                 "publishWorkflows": "false",
                 "overwriteUnmanagedCustomizations": "true",
                 "skipProductUpdateDependencies": "false",
@@ -1499,10 +1499,10 @@
                 "holdingSolution": "true",
                 "override": "true",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "logsDirectory": "",
                 "logFileName": "",
-                "crmConnectionTimeout": "120"
+                "crmConnectionTimeout": "6000"
               }
             },
             {
@@ -1510,7 +1510,7 @@
               },
               "taskId": "f08caccb-e6cd-4857-9e69-410c8adb7eb8",
               "version": "12.*",
-              "name": "Apply Solution: XXXModelDrivenApps",
+              "name": "Apply Solution: CBSModelDrivenApps",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -1522,10 +1522,10 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXCrpFS)",
-                "solutionName": "XXXModelDrivenApps",
+                "crmConnectionString": "$(CBSCrpFS)",
+                "solutionName": "CBSModelDrivenApps",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "crmConnectionTimeout": "1200"
               }
             },
@@ -1546,7 +1546,7 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXUatFS)",
+                "crmConnectionString": "$(CBSUatFS)",
                 "crmConnectionTimeout": "1200"
               }
             }
@@ -1792,7 +1792,7 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXGoldFS)"
+                "crmConnectionString": "$(CBSGoldFS)"
               }
             },
             {
@@ -1800,7 +1800,7 @@
               },
               "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
               "version": "12.*",
-              "name": "Import Solution XXXPCFControls_managed",
+              "name": "Import Solution CBSPCFControls_managed",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -1812,8 +1812,8 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXGoldFS)",
-                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXPCFControls_managed.zip",
+                "crmConnectionString": "$(CBSGoldFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build CBS Solutions/drop/CBSPCFControls_managed.zip",
                 "publishWorkflows": "false",
                 "overwriteUnmanagedCustomizations": "true",
                 "skipProductUpdateDependencies": "false",
@@ -1821,10 +1821,10 @@
                 "holdingSolution": "true",
                 "override": "true",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "logsDirectory": "",
                 "logFileName": "",
-                "crmConnectionTimeout": "120"
+                "crmConnectionTimeout": "6000"
               }
             },
             {
@@ -1832,7 +1832,7 @@
               },
               "taskId": "f08caccb-e6cd-4857-9e69-410c8adb7eb8",
               "version": "12.*",
-              "name": "Apply Solution: XXXPCFControls",
+              "name": "Apply Solution: CBSPCFControls",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -1844,10 +1844,10 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXGoldFS)",
-                "solutionName": "XXXPCFControls",
+                "crmConnectionString": "$(CBSGoldFS)",
+                "solutionName": "CBSPCFControls",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "crmConnectionTimeout": "1200"
               }
             },
@@ -1856,7 +1856,7 @@
               },
               "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
               "version": "12.*",
-              "name": "Import Solution XXXCustomizations_managed",
+              "name": "Import Solution CBSCustomizations_managed",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -1868,8 +1868,8 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXGoldFS)",
-                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXCustomizations_managed.zip",
+                "crmConnectionString": "$(CBSGoldFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build CBS Solutions/drop/CBSCustomizations_managed.zip",
                 "publishWorkflows": "false",
                 "overwriteUnmanagedCustomizations": "true",
                 "skipProductUpdateDependencies": "false",
@@ -1877,10 +1877,10 @@
                 "holdingSolution": "true",
                 "override": "true",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "logsDirectory": "",
                 "logFileName": "",
-                "crmConnectionTimeout": "120"
+                "crmConnectionTimeout": "6000"
               }
             },
             {
@@ -1888,7 +1888,7 @@
               },
               "taskId": "f08caccb-e6cd-4857-9e69-410c8adb7eb8",
               "version": "12.*",
-              "name": "Apply Solution: XXXCustomizations",
+              "name": "Apply Solution: CBSCustomizations",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -1900,10 +1900,10 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXGoldFS)",
-                "solutionName": "XXXCustomizations",
+                "crmConnectionString": "$(CBSGoldFS)",
+                "solutionName": "CBSCustomizations",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "crmConnectionTimeout": "1200"
               }
             },
@@ -1912,7 +1912,7 @@
               },
               "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
               "version": "12.*",
-              "name": "Import Solution XXXProcesses_managed",
+              "name": "Import Solution CBSProcesses_managed",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -1924,8 +1924,8 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXGoldFS)",
-                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXProcesses_managed.zip",
+                "crmConnectionString": "$(CBSGoldFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build CBS Solutions/drop/CBSProcesses_managed.zip",
                 "publishWorkflows": "false",
                 "overwriteUnmanagedCustomizations": "true",
                 "skipProductUpdateDependencies": "false",
@@ -1933,10 +1933,10 @@
                 "holdingSolution": "true",
                 "override": "true",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "logsDirectory": "",
                 "logFileName": "",
-                "crmConnectionTimeout": "120"
+                "crmConnectionTimeout": "6000"
               }
             },
             {
@@ -1944,7 +1944,7 @@
               },
               "taskId": "f08caccb-e6cd-4857-9e69-410c8adb7eb8",
               "version": "12.*",
-              "name": "Apply Solution: XXXProcesses",
+              "name": "Apply Solution: CBSProcesses",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -1956,10 +1956,10 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXGoldFS)",
-                "solutionName": "XXXProcesses",
+                "crmConnectionString": "$(CBSGoldFS)",
+                "solutionName": "CBSProcesses",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "crmConnectionTimeout": "1200"
               }
             },
@@ -1968,7 +1968,7 @@
               },
               "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
               "version": "12.*",
-              "name": "Import Solution XXXSecurityRoles_managed",
+              "name": "Import Solution CBSSecurityRoles_managed",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -1980,8 +1980,8 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXGoldFS)",
-                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXSecurityRoles_managed.zip",
+                "crmConnectionString": "$(CBSGoldFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build CBS Solutions/drop/CBSSecurityRoles_managed.zip",
                 "publishWorkflows": "false",
                 "overwriteUnmanagedCustomizations": "true",
                 "skipProductUpdateDependencies": "false",
@@ -1989,10 +1989,10 @@
                 "holdingSolution": "true",
                 "override": "true",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "logsDirectory": "",
                 "logFileName": "",
-                "crmConnectionTimeout": "120"
+                "crmConnectionTimeout": "6000"
               }
             },
             {
@@ -2000,7 +2000,7 @@
               },
               "taskId": "f08caccb-e6cd-4857-9e69-410c8adb7eb8",
               "version": "12.*",
-              "name": "Apply Solution: XXXSecurityRoles",
+              "name": "Apply Solution: CBSSecurityRoles",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -2012,10 +2012,10 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXGoldFS)",
-                "solutionName": "XXXSecurityRoles",
+                "crmConnectionString": "$(CBSGoldFS)",
+                "solutionName": "CBSSecurityRoles",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "crmConnectionTimeout": "1200"
               }
             },
@@ -2024,7 +2024,7 @@
               },
               "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
               "version": "12.*",
-              "name": "Import Solution XXXModelDrivenApps_managed",
+              "name": "Import Solution CBSModelDrivenApps_managed",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -2036,8 +2036,8 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXGoldFS)",
-                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXModelDrivenApps_managed.zip",
+                "crmConnectionString": "$(CBSGoldFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build CBS Solutions/drop/CBSModelDrivenApps_managed.zip",
                 "publishWorkflows": "false",
                 "overwriteUnmanagedCustomizations": "true",
                 "skipProductUpdateDependencies": "false",
@@ -2045,10 +2045,10 @@
                 "holdingSolution": "true",
                 "override": "true",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "logsDirectory": "",
                 "logFileName": "",
-                "crmConnectionTimeout": "120"
+                "crmConnectionTimeout": "6000"
               }
             },
             {
@@ -2056,7 +2056,7 @@
               },
               "taskId": "f08caccb-e6cd-4857-9e69-410c8adb7eb8",
               "version": "12.*",
-              "name": "Apply Solution: XXXModelDrivenApps",
+              "name": "Apply Solution: CBSModelDrivenApps",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -2068,10 +2068,10 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXGoldFS)",
-                "solutionName": "XXXModelDrivenApps",
+                "crmConnectionString": "$(CBSGoldFS)",
+                "solutionName": "CBSModelDrivenApps",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "crmConnectionTimeout": "1200"
               }
             },
@@ -2092,7 +2092,7 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXUatFS)",
+                "crmConnectionString": "$(CBSUatFS)",
                 "crmConnectionTimeout": "1200"
               }
             }
@@ -2338,7 +2338,7 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXProdFS)"
+                "crmConnectionString": "$(CBSProdFS)"
               }
             },
             {
@@ -2346,7 +2346,7 @@
               },
               "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
               "version": "12.*",
-              "name": "Import Solution XXXPCFControls_managed",
+              "name": "Import Solution CBSPCFControls_managed",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -2358,8 +2358,8 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXProdFS)",
-                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXPCFControls_managed.zip",
+                "crmConnectionString": "$(CBSProdFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build CBS Solutions/drop/CBSPCFControls_managed.zip",
                 "publishWorkflows": "false",
                 "overwriteUnmanagedCustomizations": "true",
                 "skipProductUpdateDependencies": "false",
@@ -2367,10 +2367,10 @@
                 "holdingSolution": "true",
                 "override": "true",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "logsDirectory": "",
                 "logFileName": "",
-                "crmConnectionTimeout": "120"
+                "crmConnectionTimeout": "6000"
               }
             },
             {
@@ -2378,7 +2378,7 @@
               },
               "taskId": "f08caccb-e6cd-4857-9e69-410c8adb7eb8",
               "version": "12.*",
-              "name": "Apply Solution: XXXPCFControls",
+              "name": "Apply Solution: CBSPCFControls",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -2390,10 +2390,10 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXProdFS)",
-                "solutionName": "XXXPCFControls",
+                "crmConnectionString": "$(CBSProdFS)",
+                "solutionName": "CBSPCFControls",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "crmConnectionTimeout": "1200"
               }
             },
@@ -2402,7 +2402,7 @@
               },
               "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
               "version": "12.*",
-              "name": "Import Solution XXXCustomizations_managed",
+              "name": "Import Solution CBSCustomizations_managed",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -2414,8 +2414,8 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXProdFS)",
-                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXCustomizations_managed.zip",
+                "crmConnectionString": "$(CBSProdFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build CBS Solutions/drop/CBSCustomizations_managed.zip",
                 "publishWorkflows": "false",
                 "overwriteUnmanagedCustomizations": "true",
                 "skipProductUpdateDependencies": "false",
@@ -2423,10 +2423,10 @@
                 "holdingSolution": "true",
                 "override": "true",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "logsDirectory": "",
                 "logFileName": "",
-                "crmConnectionTimeout": "120"
+                "crmConnectionTimeout": "6000"
               }
             },
             {
@@ -2434,7 +2434,7 @@
               },
               "taskId": "f08caccb-e6cd-4857-9e69-410c8adb7eb8",
               "version": "12.*",
-              "name": "Apply Solution: XXXCustomizations",
+              "name": "Apply Solution: CBSCustomizations",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -2446,10 +2446,10 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXProdFS)",
-                "solutionName": "XXXCustomizations",
+                "crmConnectionString": "$(CBSProdFS)",
+                "solutionName": "CBSCustomizations",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "crmConnectionTimeout": "1200"
               }
             },
@@ -2458,7 +2458,7 @@
               },
               "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
               "version": "12.*",
-              "name": "Import Solution XXXProcesses_managed",
+              "name": "Import Solution CBSProcesses_managed",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -2470,8 +2470,8 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXProdFS)",
-                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXProcesses_managed.zip",
+                "crmConnectionString": "$(CBSProdFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build CBS Solutions/drop/CBSProcesses_managed.zip",
                 "publishWorkflows": "false",
                 "overwriteUnmanagedCustomizations": "true",
                 "skipProductUpdateDependencies": "false",
@@ -2479,10 +2479,10 @@
                 "holdingSolution": "true",
                 "override": "true",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "logsDirectory": "",
                 "logFileName": "",
-                "crmConnectionTimeout": "120"
+                "crmConnectionTimeout": "6000"
               }
             },
             {
@@ -2490,7 +2490,7 @@
               },
               "taskId": "f08caccb-e6cd-4857-9e69-410c8adb7eb8",
               "version": "12.*",
-              "name": "Apply Solution: XXXProcesses",
+              "name": "Apply Solution: CBSProcesses",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -2502,10 +2502,10 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXProdFS)",
-                "solutionName": "XXXProcesses",
+                "crmConnectionString": "$(CBSProdFS)",
+                "solutionName": "CBSProcesses",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "crmConnectionTimeout": "1200"
               }
             },
@@ -2514,7 +2514,7 @@
               },
               "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
               "version": "12.*",
-              "name": "Import Solution XXXSecurityRoles_managed",
+              "name": "Import Solution CBSSecurityRoles_managed",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -2526,8 +2526,8 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXProdFS)",
-                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXSecurityRoles_managed.zip",
+                "crmConnectionString": "$(CBSProdFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build CBS Solutions/drop/CBSSecurityRoles_managed.zip",
                 "publishWorkflows": "false",
                 "overwriteUnmanagedCustomizations": "true",
                 "skipProductUpdateDependencies": "false",
@@ -2535,10 +2535,10 @@
                 "holdingSolution": "true",
                 "override": "true",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "logsDirectory": "",
                 "logFileName": "",
-                "crmConnectionTimeout": "120"
+                "crmConnectionTimeout": "6000"
               }
             },
             {
@@ -2546,7 +2546,7 @@
               },
               "taskId": "f08caccb-e6cd-4857-9e69-410c8adb7eb8",
               "version": "12.*",
-              "name": "Apply Solution: XXXSecurityRoles",
+              "name": "Apply Solution: CBSSecurityRoles",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -2558,10 +2558,10 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXProdFS)",
-                "solutionName": "XXXSecurityRoles",
+                "crmConnectionString": "$(CBSProdFS)",
+                "solutionName": "CBSSecurityRoles",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "crmConnectionTimeout": "1200"
               }
             },
@@ -2570,7 +2570,7 @@
               },
               "taskId": "4455576d-d40a-4234-ad75-3d7ff40ec76e",
               "version": "12.*",
-              "name": "Import Solution XXXModelDrivenApps_managed",
+              "name": "Import Solution CBSModelDrivenApps_managed",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -2582,8 +2582,8 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXProdFS)",
-                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build XXX Solutions/drop/XXXModelDrivenApps_managed.zip",
+                "crmConnectionString": "$(CBSProdFS)",
+                "solutionFile": "$(System.DefaultWorkingDirectory)/_Build CBS Solutions/drop/CBSModelDrivenApps_managed.zip",
                 "publishWorkflows": "false",
                 "overwriteUnmanagedCustomizations": "true",
                 "skipProductUpdateDependencies": "false",
@@ -2591,10 +2591,10 @@
                 "holdingSolution": "true",
                 "override": "true",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "logsDirectory": "",
                 "logFileName": "",
-                "crmConnectionTimeout": "120"
+                "crmConnectionTimeout": "6000"
               }
             },
             {
@@ -2602,7 +2602,7 @@
               },
               "taskId": "f08caccb-e6cd-4857-9e69-410c8adb7eb8",
               "version": "12.*",
-              "name": "Apply Solution: XXXModelDrivenApps",
+              "name": "Apply Solution: CBSModelDrivenApps",
               "refName": "",
               "enabled": true,
               "alwaysRun": false,
@@ -2614,10 +2614,10 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXProdFS)",
-                "solutionName": "XXXModelDrivenApps",
+                "crmConnectionString": "$(CBSProdFS)",
+                "solutionName": "CBSModelDrivenApps",
                 "useAsyncMode": "true",
-                "asyncWaitTimeout": "1200",
+                "asyncWaitTimeout": "6000",
                 "crmConnectionTimeout": "1200"
               }
             },
@@ -2638,7 +2638,7 @@
               },
               "condition": "succeeded()",
               "inputs": {
-                "crmConnectionString": "$(XXXUatFS)",
+                "crmConnectionString": "$(CBSUatFS)",
                 "crmConnectionTimeout": "1200"
               }
             }
@@ -2710,7 +2710,7 @@
     {
       "sourceId": "5eee0d9a-ae0b-4499-9f81-006dd4da5ef7:351",
       "type": "Build",
-      "alias": "_Build XXX Solutions",
+      "alias": "_Build CBS Solutions",
       "definitionReference": {
         "artifactSourceDefinitionUrl": {
           "id": "https://sisn.visualstudio.com/_permalink/_build/index?collectionId=65def062-c912-4a77-a8d5-8cc2b10fff65&projectId=5eee0d9a-ae0b-4499-9f81-006dd4da5ef7&definitionId=351",
@@ -2734,7 +2734,7 @@
         },
         "definition": {
           "id": "351",
-          "name": "Build XXX Solutions"
+          "name": "Build CBS Solutions"
         },
         "definitions": {
           "id": "",
@@ -2759,7 +2759,7 @@
   ],
   "triggers": [
     {
-      "artifactAlias": "_Build XXX Solutions",
+      "artifactAlias": "_Build CBS Solutions",
       "triggerConditions": [
       ],
       "triggerType": 1
@@ -2783,7 +2783,7 @@
     }
   },
   "id": 2,
-  "name": "Release XXX Solutions",
+  "name": "Release CBS Solutions",
   "path": "\\",
   "projectReference": null,
   "url": "https://sisn.vsrm.visualstudio.com/5eee0d9a-ae0b-4499-9f81-006dd4da5ef7/_apis/Release/definitions/2",
